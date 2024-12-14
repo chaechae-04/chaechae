@@ -1,0 +1,23 @@
+.markdown {
+    h1 { 
+        font-size: 2em;
+        margin-bottom: 1rem;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 0.8rem;
+    }
+    code {
+        font-family: monospace;
+        color: #abb2bf;
+        background: #282c34;
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+    }
+    pre {
+        background: #282c34;
+        border-radius: 6px;
+        padding: 1rem;
+        overflow-x: auto;
+    }
+}
