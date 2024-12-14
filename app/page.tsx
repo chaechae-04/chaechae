@@ -10,6 +10,9 @@ export default async function Home() {
   return (
     <div className="min-h-screen bg-[#051c2c]">
       <Header />
+      <div className="flex jusity-center mt-4">
+        <img src="/imgs/temp.jpg" alt="임시 이미지" className="w-full amx-w-4xl rounded-lg" />
+      </div>
       <main className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid gap-6">
           {posts.map((post) => (
