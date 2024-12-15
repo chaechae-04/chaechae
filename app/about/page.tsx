@@ -19,7 +19,7 @@ export default function About() {
                     백엔드, 게임 개발자로, 항상 새로운것을 알아가는것에 열정을 가지고 있습니다.
                 </p>
                 
-                <div className="w-[100%] xl:w-[55%] bg-gray-600 h-px mt-2 mx-auto mt-5 mb-10" />
+                <div className="w-[90%] xl:w-[55%] bg-gray-600 h-px mt-2 mx-auto mt-5 mb-10" />
 
                 <div className="flex flex-col w-[50%] mx-auto space-y-10">
                     <div>
