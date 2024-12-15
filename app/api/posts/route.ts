@@ -6,7 +6,7 @@ import { PostData } from '@/types/post'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
-export async function getAllPosts(): Promise<PostData[]> {
+async function getAllPosts(): Promise<PostData[]> {
     const fileNames = fs.readdirSync(postsDirectory)
     const allPostData = await Promise.all(fileNames.map(async (fileName) => {
         const id = fileName.replace(/\.md$/, '')
