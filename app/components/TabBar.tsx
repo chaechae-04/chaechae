@@ -14,8 +14,9 @@ export default function TabBar() {
                     <button 
                         key={tab} 
                         onClick={() => setSelectedTab(tab)} 
+                        /* 5xl:text-base */
                         className={`px-4 py-2 border-b-2 transition ${tab === selectedTab ? 'text-white border-white' : 'text-gray-300 hover:text-white border-transparent hover:border-white'}
-                        text-xxs 5xl:text-base`}>
+                        text-xxxs`}>
                         {tab}
                     </button>
                 ))}
