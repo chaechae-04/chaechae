@@ -10,7 +10,7 @@ export default function Footer() {
                     © 2024 chaechae. 모든 권리 보유. | 이 페이지는 내 개발 일지를 기록하는 테크로그입니다.
                 </p>
                 <div className="flex flex-row text-xs font-bold space-w-4 justify-center">
-                        <a href="https://github.com/lee0su" className="flex text-gray-300 hover:text-white mx-1" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/chaechae-04" className="flex text-gray-300 hover:text-white mx-1" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faGithub} className="w-4 h-4 mr-1" /> GitHub |
                         </a>
                         <a href="https://instagram.com/lee.young_s" className="flex text-gray-300 hover:text-white mx-1" target="_blank" rel="noopener noreferrer">
