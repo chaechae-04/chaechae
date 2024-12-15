@@ -5,6 +5,7 @@ import TabBar from '@/app/components/TabBar'
 import Footer from '@/app/components/Footer'
 
 import Link from 'next/link'
+
 import { getAllPosts } from '@/lib/posts'
 
 export default async function Home() {
@@ -14,7 +15,7 @@ export default async function Home() {
     <div className="min-h-screen bg-[#051c2c]">
       <Header />
       <div className="mt-4">
-        <img src="/imgs/temp.jpg" alt="임시 이미지" className="w-full md:w-3/4 lg:w-1/2 rounded-lg mx-auto" />
+        <img src="/imgs/temp.jpg" alt="임시 이미지" className="w-3/4 lg:w-1/2 rounded-lg mx-auto" />
       </div>
       <TabBar />
       <div className="max-w-7xl mx-auto flex px-4 py-8 space-x-4">
