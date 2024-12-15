@@ -8,7 +8,7 @@ export default function TabBar() {
     const [selectedTab, setSelectedTab] = useState(tabs[0])
 
     return (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-4 mx-auto">
             <div className="flex gap-6">
                 {tabs.map((tab) => (
                     <button 
