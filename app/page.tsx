@@ -15,7 +15,7 @@ export default function Home() {
   const [posts, setPosts] = useState<PostData[]>([])
   const [filteredPosts, setFilteredPosts] = useState<PostData[]>([])
   const [currentPage, setCurrentPage] = useState(1)
-  const postsPerPage = 1
+  const postsPerPage = 5
 
   useEffect(() => {
       const fetchPosts = async () => {
