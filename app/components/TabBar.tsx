@@ -10,7 +10,8 @@ export default function TabBar({ onSelectTab }: TabBarProps) {
         '공부': 'study',
         '게임': 'game',
         '코딩테스트': 'test',
-        '디자인': 'design'
+        '디자인': 'design',
+        '블로그': 'blog'
     }
     const [selectedTab, setSelectedTab] = useState('전체')
 
