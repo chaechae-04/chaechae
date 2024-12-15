@@ -56,6 +56,7 @@ export default function About() {
                                 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" className="rounded-2xl"/>
                                 <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" className="rounded-2xl" />
                                 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-2xl" />
                             </div>
                             <div className="flex flex-row space-x-2">
                                 <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" className="rounded-2xl" />
@@ -121,6 +122,7 @@ export default function About() {
                             <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" className="rounded-2xl"/>
                             <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" className="rounded-2xl" />
                             <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" className="rounded-2xl" />
+                            <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-2xl" />
                             <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" className="rounded-2xl" />
                             <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" className="rounded-2xl" />
                             <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" className="rounded-2xl" />
@@ -132,7 +134,7 @@ export default function About() {
                     </div>
 
                     <div>
-                        <p className="font-bold mb-2">CONTACT</p>
+                        <p className="font-bold mb-5">CONTACT</p>
                         <div className="flex flex-col">
                             <div className="flex flex-row space-x-2">
                                 <Link href="https://github.com/chaechae-04" className="flex text-gray-300 hover:text-white mx-1 space-x-2" target="_blank" rel="noopener noreferrer">
