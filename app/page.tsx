@@ -2,6 +2,7 @@
 
 import Header from '@/app/components/Header'
 import TabBar from '@/app/components/TabBar'
+import Footer from '@/app/components/Footer'
 
 import Link from 'next/link'
 import { getAllPosts } from '@/lib/posts'
@@ -38,6 +39,7 @@ export default async function Home() {
               <h3 className="text-white text-lg font-bold md-4">추가 정보</h3>
         </aside>
       </div>
+      <Footer />
     </div>
   )
 }
