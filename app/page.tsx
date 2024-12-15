@@ -45,7 +45,7 @@ export default function Home() {
   const getPaginationButtons = () => {
     const buttons = []
     let startPage = Math.max(1, currentPage - 2)
-    let endPage = Math.min(totalPages, startPage + 4)
+    const endPage = Math.min(totalPages, startPage + 4)
 
     if (currentPage === totalPages - 1 || currentPage === totalPages) {
       startPage = Math.max(1, totalPages - 4)
