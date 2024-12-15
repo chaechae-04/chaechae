@@ -6,10 +6,10 @@ export default function About() {
         <div className="min-h-screen bg-[#051c2c]">
             <Header />
             <div className="bg-[#051c2c] text-white flex flex-col items-center justify-center mx-auto md:mt-[50px] lg:mt-[100px] xl:mt-[150px]">
-                <p className="text-sm xl:text-4xl font-bold mb-6">
+                <p className="text-base xl:text-4xl font-bold mb-6">
                     안녕하세요, 저는 [chaechae-04] 입니다.
                     </p>
-                <p className="text-xs xl:text-lg text-gray-400 font-bold mb-4">
+                <p className="text-sm xl:text-lg text-gray-400 font-bold mb-4">
                     백엔드, 게임 개발자로, 항상 새로운것을 알아가는것에 열정을 가지고 있습니다.
                 </p>
                 
