@@ -42,7 +42,7 @@ export default function Home() {
       </div>
       <TabBar />
       <div className="max-w-7xl mx-auto flex px-4 py-8 space-x-4">
-        <div className="w-3/4 flex flex-col">
+        <div className="w-full md:w-3/4 lg:w-3/4 xl:w-3/4 flex flex-col">
           <main className="flex-1">
             <div className="grid gap-6">
               {currentPosts.map((post) => (
@@ -71,9 +71,14 @@ export default function Home() {
               ))}
           </div>
         </div>
-        <aside className="w-1/4 bg-[#0A2540] p-4 rounded-lg">
+        {/* Desctop View */}
+        <aside className="hidden md:flex lg:flex xl:flex w-1/4 bg-[#0A2540] p-4 rounded-lg">
               <h3 className="text-white text-lg font-bold md-4">추가 정보</h3>
         </aside>
+      </div>
+      {/* Mobile View */}
+      <div className="flex md:hidden lg:hidden xl:hidden bg-[#0A2540] rounded-lg max-w-7xl mx-4 flex px-4 py-8 space-x-4">
+        <h3 className="text-white text-lg font-bold md-4">추가 정보</h3>
       </div>
       <Footer />
     </div>
