@@ -20,10 +20,10 @@ export default function Header() {
                         <img src="/imgs/chaechae.jpg" alt="채채 사진" className="rounded-full aspect-[1/1] w-[14%] md:w-[7%] lg:w-[7%] xl:w-[7%]" />
                         <p className="ml-5 text-white text-xl sm:text-2xl font-bold my-auto">채채의 개발로그</p>
                     </Link>
-                    <div className="hidden sm:flex flex gap-4 text-gray-300 pr-4 sm:pr-10">
-                        <Link href="/posts" className="hover:text-white px-2 text-sm sm:text-base">Posts</Link>
-                        <Link href="/tags" className="hover:text-white px-2 text-sm sm:text-base">Tags</Link>
-                        <Link href="/about" className="hover:text-white px-2 text-sm sm:text-base">About</Link>
+                    <div className="hidden sm:flex gap-4 text-gray-300 pr-10 flex-row">
+                        <Link href="/projects" className="hover:text-white px-2 text-sm sm:text-base w-[50%]">Projects</Link>
+                        <Link href="/todo" className="hover:text-white px-2 text-sm sm:text-base w-[50%]">To-do</Link>
+                        <Link href="/about" className="hover:text-white px-2 text-sm sm:text-base w-[15%]">About</Link>
                     </div>
                     <button onClick={toggleMenu} className="flex sm:hidden text-gray-300">
                         <FontAwesomeIcon icon={faBars} className="text-white h-6 w-6" />
@@ -33,8 +33,8 @@ export default function Header() {
 
                 {isMenuOpen && (
                     <div className="absolute top-16 left-0 w-full bg-gray-800 text-white p-4 flex flex-col sm:hidden">
-                        <Link href="/posts" className="block hover:text-gray-300 py-2">Posts</Link>
-                        <Link href="/tags" className="block hover:text-gray-300 py-2">Tags</Link>
+                        <Link href="/projects" className="block hover:text-gray-300 py-2">Projects</Link>
+                        <Link href="/todo" className="block hover:text-gray-300 py-2">To-do</Link>
                         <Link href="/about" className="block hover:text-gray-300 py-2">About</Link>
                     </div>
                 )}
