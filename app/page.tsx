@@ -1,7 +1,9 @@
 // app/page.tsx
 
-import Link from 'next/link'
 import Header from '@/app/components/Header'
+import TabBar from '@/app/components/TabBar'
+
+import Link from 'next/link'
 import { getAllPosts } from '@/lib/posts'
 
 export default async function Home() {
@@ -13,6 +15,7 @@ export default async function Home() {
       <div className="mt-4">
         <img src="/imgs/temp.jpg" alt="임시 이미지" className="w-full md:w-3/4 lg:w-1/2 rounded-lg mx-auto" />
       </div>
+      <TabBar />
       <main className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid gap-6">
           {posts.map((post) => (
