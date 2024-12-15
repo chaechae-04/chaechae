@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.text-xxxs {
+.text-xxs {
   font-size: 0.7rem;
+}
+
+.text-xxxs {
+  font-size: 0.5rem;
 }
