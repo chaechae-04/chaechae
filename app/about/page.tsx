@@ -112,7 +112,7 @@ export default function About() {
 
                     <div>
                         <p className="font-bold mb-2">STACKS</p>
-                        <div className="flex space-x-2 flex-wrap space-y-2">
+                        <div className="flex space-x-2 flex-wrap space-y-2 w-[80%]">
                             <div />
                             <img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=openjdk&logoColor=white" className="rounded-2xl" />
                             <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" className="rounded-2xl" />
