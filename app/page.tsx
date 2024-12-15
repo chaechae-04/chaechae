@@ -15,7 +15,7 @@ export default function Home() {
   const [posts, setPosts] = useState<PostData[]>([])
   const [filteredPosts, setFilteredPosts] = useState<PostData[]>([])
   const [currentPage, setCurrentPage] = useState(1)
-  const postsPerPage = 5
+  const postsPerPage = 1
 
   useEffect(() => {
       const fetchPosts = async () => {
@@ -40,6 +40,26 @@ export default function Home() {
       setFilteredPosts(posts.filter(post => post.type === type))
     }
     setCurrentPage(1)
+  }
+
+  const getPaginationButtons = () => {
+    const buttons = []
+    let startPage = Math.max(1, currentPage - 2)
+    let endPage = Math.min(totalPages, startPage + 4)
+
+    if (currentPage === totalPages - 1 || currentPage === totalPages) {
+      startPage = Math.max(1, totalPages - 4)
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      buttons.push(
+        <button key={i} onClick={() => setCurrentPage(i)} className= {`mx-1 px-3 py-1 rounded-lg ${currentPage === i ? 'bg-blue-500 text-white' : 'bg-gray-300 text-black'}`}>
+          {i}
+        </button>
+      )
+    }
+
+    return buttons
   }
 
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage)
@@ -71,15 +91,7 @@ export default function Home() {
           </main>
 
           <div className="flex justify-center mt-4">
-            {Array.from({ length: totalPages }, (_, index) => (
-                  <button 
-                      key={index + 1} 
-                      onClick={() => setCurrentPage(index + 1)} 
-                      className={`mx-1 px-3 py-1 rounded-lg ${currentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-gray-300 text-black'}`}
-                  >
-                      {index + 1}
-                  </button>
-              ))}
+            {getPaginationButtons()}
           </div>
         </div>
         {/* Desctop View */}
