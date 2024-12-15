@@ -17,7 +17,7 @@ export default function Header() {
             <nav className="mx-auto max-w-screen-xl px-4 sm:px-10 py-4 flex flex-col">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="flex flex-row">
-                        <img src="/imgs/chaechae.jpg" alt="채채 사진" className="rounded-3xl w-[7%]" />
+                        <img src="/imgs/chaechae.jpg" alt="채채 사진" className="rounded-full aspect-[1/1] w-[7%]" />
                         <p className="ml-10 md:ml-5 lg:ml-5 xl:ml-5 text-white text-xl sm:text-2xl font-bold my-auto">채채의 개발로그</p>
                     </Link>
                     <div className="hidden sm:flex flex gap-4 text-gray-300 pr-4 sm:pr-10">

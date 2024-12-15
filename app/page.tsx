@@ -76,8 +76,9 @@ export default function Home() {
         <div className="w-full md:w-3/4 lg:w-3/4 xl:w-3/4 flex flex-col">
           <main className="flex-1">
             <div className="grid gap-6">
-              {currentPosts.map((post) => (
-                <article key={post.id} className="bg-[#0A2540] p-4 md:p-6 lg:p-8 rounded-lg hover:bg-[#123456] transition-colors">
+              {currentPosts.length > 0 ? (
+              currentPosts.map((post) => (
+                <article key={post.id} className="bg-[#0A2540] p-4 md:p-6 lg:p-8 rounded-lg hover:bg-[#123456] transition-colors border-gray-800 border-b border-r shadow-2xl">
                   <Link href={`/posts/${post.id}`}>
                     <h2 className="text-white text-lg md:text-xl lg:text-2xl font-bold mb-2">{post.title}</h2>
                     <p className="text-gray-400 text-sm md:text-base mb-4">{post.excerpt}</p>
@@ -86,7 +87,9 @@ export default function Home() {
                     </div>
                   </Link>
                 </article>
-              ))}
+              ))) : (
+                <div className="text-white text-lg text-center mt-4">Empty !</div>
+              )}
             </div>
           </main>
 
