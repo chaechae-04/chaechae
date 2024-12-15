@@ -77,17 +77,17 @@ export default function About() {
                         <div className="flex flex-col mx-auto ml-5 space-y-2">
                             <div className="flex flex-row space-x-2">
                                 <Link href="https://github.com/chaechae-04" className="flex text-gray-300 hover:text-white mx-1 space-x-2" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faGithub} className="w-6 h-6 mr-2" /> GitHub : <Link href="https://github.com/chaechae-04" target="_blank">chaechae-04</Link>
+                                    <FontAwesomeIcon icon={faGithub} className="w-6 h-6 mr-2" /> GitHub : chaechae-04
                                 </Link>
                             </div>
                             <div className="flex flex-row space-x-2">
                                 <Link href="https://instagram.com/lee.young_s" className="flex text-gray-300 hover:text-white mx-1 space-x-2" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 mr-2" /> Instagram : <Link href="https://instagram.com/lee.young_s" target="_blank">lee.young_s</Link>
+                                    <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 mr-2" /> Instagram : lee.young_s
                                 </Link>
                             </div>
                             <div className="flex flex-row space-x-2">
                                 <Link href="mailto:leeys4903@naver.com" className="flex text-gray-300 hover:text-white mx-1 space-x-2">
-                                    <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 mr-2" /> Email <Link href="mailto:leeys4903@naver.com" className='underline'>leeys4903@naver.com</Link>
+                                    <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 mr-2" /> Email : leeys4903@naver.com
                                 </Link>
                             </div>
                         </div>
