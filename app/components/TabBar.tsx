@@ -16,7 +16,7 @@ export default function TabBar() {
                         onClick={() => setSelectedTab(tab)} 
                         /* 5xl:text-base */
                         className={`px-4 py-2 border-b-2 transition ${tab === selectedTab ? 'text-white border-white' : 'text-gray-300 hover:text-white border-transparent hover:border-white'}
-                        text-xxxs font-bold`}>
+                        text-xxxs xl:text-base font-bold`}>
                         {tab}
                     </button>
                 ))}
