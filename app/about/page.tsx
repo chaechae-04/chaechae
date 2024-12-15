@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 export default function About() {
     return (
-        <div className="min-h-screen bg-[#051c2c]">
+        <div className="min-h-screen bg-[#051c2c] max-w-screen">
             <Header />
             <div className="bg-[#051c2c] text-white flex flex-col items-center justify-center mx-auto md:my-[50px] lg:my-[100px] xl:my-[150px]">
                 <p className="text-base xl:text-4xl font-bold mb-6">
@@ -27,7 +27,7 @@ export default function About() {
                             PERSONAL HISTORY
                         </p>
                         <ul className="list-disc list-inside text-gray-300 text-xxs xl:text-xl">
-                            <li>[국립한국교통대학교] - 컴퓨터 공학 전공</li>
+                            <li>[국립한국교통대학교] - 컴퓨터 공학 전공 1학년 재학</li>
                         </ul>
                     </div>
 
@@ -46,26 +46,26 @@ export default function About() {
                         </p>
                         <div className="flex flex-col mx-auto ml-5 space-y-2">
                             <div className="flex flex-row space-x-2">
-                                <img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=openjdk&logoColor=white" />
-                                <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" />
-                                <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-                                <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" />
+                                <img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=openjdk&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" className="rounded-2xl" />
                             </div>
                             <div className="flex flex-row space-x-2">
-                                <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-                                <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-                                <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+                                <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" className="rounded-2xl"/>
+                                <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" className="rounded-2xl" />
                             </div>
                             <div className="flex flex-row space-x-2">
-                                <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-                                <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" />
-                                <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
-                                <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+                                <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white" className="rounded-2xl" />
                             </div>
                             <div className="flex flex-row space-x-2">
-                                <img src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white" />
-                                <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-                                <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" />
+                                <img src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" className="rounded-2xl" />
                             </div>
                         </div>                         
                     </div>
@@ -77,17 +77,17 @@ export default function About() {
                         <div className="flex flex-col mx-auto ml-5 space-y-2">
                             <div className="flex flex-row space-x-2">
                                 <Link href="https://github.com/chaechae-04" className="flex text-gray-300 hover:text-white mx-1 space-x-2" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faGithub} className="w-4 h-4 mr-1" /> GitHub : <Link href="https://github.com/chaechae-04" target="_blank">chaechae-04</Link>
+                                    <FontAwesomeIcon icon={faGithub} className="w-6 h-6 mr-2" /> GitHub : <Link href="https://github.com/chaechae-04" target="_blank">chaechae-04</Link>
                                 </Link>
                             </div>
                             <div className="flex flex-row space-x-2">
                                 <Link href="https://instagram.com/lee.young_s" className="flex text-gray-300 hover:text-white mx-1 space-x-2" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faInstagram} className="w-4 h-4 mr-1" /> Instagram : <Link href="https://instagram.com/lee.young_s" target="_blank">lee.young_s</Link>
+                                    <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 mr-2" /> Instagram : <Link href="https://instagram.com/lee.young_s" target="_blank">lee.young_s</Link>
                                 </Link>
                             </div>
                             <div className="flex flex-row space-x-2">
                                 <Link href="mailto:leeys4903@naver.com" className="flex text-gray-300 hover:text-white mx-1 space-x-2">
-                                    <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4 mr-1" /> Email <Link href="mailto:leeys4903@naver.com" className='underline'>leeys4903@naver.com</Link>
+                                    <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 mr-2" /> Email <Link href="mailto:leeys4903@naver.com" className='underline'>leeys4903@naver.com</Link>
                                 </Link>
                             </div>
                         </div>
