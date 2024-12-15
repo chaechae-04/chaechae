@@ -103,6 +103,7 @@ export default function Home() {
         </aside>
       </div>
       {/* Mobile View */}
+      <div />
       <div className="flex md:hidden lg:hidden xl:hidden bg-[#0A2540] rounded-lg max-w-7xl mx-4 flex px-4 py-8 space-x-4">
         <h3 className="text-white text-lg font-bold md-4">추가 정보</h3>
       </div>
