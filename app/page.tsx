@@ -13,6 +13,7 @@ import { PostData } from '@/types/post'
 
 export default function Home() {
   const [posts, setPosts] = useState<PostData[]>([])
+  const [filteredPosts, setFilteredPosts] = useState<PostData[]>([])
   const [currentPage, setCurrentPage] = useState(1)
   const postsPerPage = 5
 
@@ -24,6 +25,7 @@ export default function Home() {
           }
           const data = await response.json()
           setPosts(data)
+          setFilteredPosts(data)
       }
 
       fetchPosts().catch(error => {
@@ -31,8 +33,17 @@ export default function Home() {
       })
   }, [])
 
-  const totalPages = Math.ceil(posts.length / postsPerPage)
-  const currentPosts = posts.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage)
+  const handleSelectTab = (type: string | null) => {
+    if (type === null) {
+      setFilteredPosts(posts)
+    } else {
+      setFilteredPosts(posts.filter(post => post.type === type))
+    }
+    setCurrentPage(1)
+  }
+
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage)
+  const currentPosts = filteredPosts.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage)
 
   return (
     <div className="min-h-screen bg-[#051c2c]">
@@ -40,7 +51,7 @@ export default function Home() {
       <div className="mt-4">
         <img src="/imgs/temp.jpg" alt="임시 이미지" className="w-3/4 lg:w-1/2 rounded-lg mx-auto" />
       </div>
-      <TabBar />
+      <TabBar onSelectTab={handleSelectTab} />
       <div className="max-w-7xl mx-auto flex px-4 py-8 space-x-4">
         <div className="w-full md:w-3/4 lg:w-3/4 xl:w-3/4 flex flex-col">
           <main className="flex-1">

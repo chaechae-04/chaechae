@@ -20,6 +20,7 @@ async function getAllPosts(): Promise<PostData[]> {
             date: matterResult.data.date,
             excerpt: matterResult.data.excerpt,
             content: matterResult.content,
+            type: matterResult.data.type
         }
     }))
 
