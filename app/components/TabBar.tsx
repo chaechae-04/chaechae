@@ -11,7 +11,11 @@ export default function TabBar() {
         <div className="flex justify-center mt-4">
             <div className="flex gap-6">
                 {tabs.map((tab) => (
-                    <button key={tab} onClick={() => setSelectedTab(tab)} className={`px-4 py-2 border-b-2 transition ${tab === selectedTab ? 'text-white border-white' : 'text-gray-300 hover:text-white border-transparent hover:border-white'}`}>
+                    <button 
+                        key={tab} 
+                        onClick={() => setSelectedTab(tab)} 
+                        className={`px-4 py-2 border-b-2 transition ${tab === selectedTab ? 'text-white border-white' : 'text-gray-300 hover:text-white border-transparent hover:border-white'}
+                        text-xs xl:text-sm`}>
                         {tab}
                     </button>
                 ))}
