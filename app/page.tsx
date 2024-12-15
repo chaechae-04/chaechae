@@ -16,11 +16,11 @@ export default async function Home() {
       <main className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid gap-6">
           {posts.map((post) => (
-            <article key={post.id} className="bg-[#0A2540] p-6 rounded-lg hover:bg-[#123456] transition-colors">
+            <article key={post.id} className="bg-[#0A2540] p-4 md:p-6 lg:p-8 rounded-lg hover:bg-[#123456] transition-colors">
               <Link href={`/posts/${post.id}`}>
-                <h2 className="text-white text-xl font-bold mb-2">{post.title}</h2>
-                <p className="text-gray-400 mb-4">{post.excerpt}</p>
-                <div className="text-sm text-gray-500">
+                <h2 className="text-white text-lg md:text-xl lg:text-2xl font-bold mb-2">{post.title}</h2>
+                <p className="text-gray-400 text-sm md:text-base mb-4">{post.excerpt}</p>
+                <div className="text-xs md:text-sm text-gray-500">
                   <span>{post.date}</span>
                 </div>
               </Link>
