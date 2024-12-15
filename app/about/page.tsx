@@ -98,21 +98,21 @@ export default function About() {
                 <div className="flex md:hidden lg:hidden xl:hidden w-full flex-col mx-auto ml-10 space-y-8">
                     <div>
                         <p className="font-bold mb-2">PERSONAM HISTORY</p>
-                        <div className="flex flex-col ml-5">
+                        <div className="flex flex-col">
                             <p className="text-sm font-bold text-gray-300">[국립한국교통대학교] - 컴퓨터 공학 전공 1학년 재학</p>
                         </div>
                     </div>
 
                     <div>
                         <p className="font-bold mb-2">PROJECTS</p>
-                        <div className="flex flex-col ml-5">
+                        <div className="flex flex-col">
                             <p> <Link href="https://github.com/chaechae-04/LiquorLounge" target="_blank" className="text-sm font-bold text-gray-300 underline">LiquorLounge</Link> : Web Application</p>
                         </div>
                     </div>
 
                     <div>
                         <p className="font-bold mb-2">STACKS</p>
-                        <div className="flex ml-5 space-x-2 flex-wrap space-y-2">
+                        <div className="flex space-x-2 flex-wrap space-y-2">
                             <div />
                             <img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=openjdk&logoColor=white" className="rounded-2xl" />
                             <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" className="rounded-2xl" />
@@ -133,7 +133,7 @@ export default function About() {
 
                     <div>
                         <p className="font-bold mb-2">CONTACT</p>
-                        <div className="flex flex-col ml-5">
+                        <div className="flex flex-col">
                             <div className="flex flex-row space-x-2">
                                 <Link href="https://github.com/chaechae-04" className="flex text-gray-300 hover:text-white mx-1 space-x-2" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon icon={faGithub} className="w-6 h-6 mr-2" /> GitHub : chaechae-04
