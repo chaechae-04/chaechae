@@ -106,7 +106,7 @@ export default function About() {
                     <div>
                         <p className="font-bold mb-2">PROJECTS</p>
                         <div className="flex flex-col ml-5">
-                            <p className="text-sm font-bold text-gray-300">LiquorLounge : Web Application</p>
+                            <p> <Link href="https://github.com/chaechae-04/LiquorLounge" target="_blank" className="text-sm font-bold text-gray-300 underline">LiquorLounge</Link> : Web Application</p>
                         </div>
                     </div>
 
