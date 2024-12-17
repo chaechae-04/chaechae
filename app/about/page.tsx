@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 export default function About() {
     return (
-        <div className="min-h-screen bg-[#051c2c] max-w-screen">
+        <div className="min-h-screen bg-[#051c2c] max-w-full">
             <Header />
             <div className="bg-[#051c2c] text-white flex flex-col items-center justify-center mx-auto md:my-[50px] lg:my-[100px] xl:my-[150px]">
                 <p className="text-base xl:text-4xl font-bold mb-6">
@@ -105,7 +105,7 @@ export default function About() {
                     </div>
                 </div>
                 {/* Mobile View */}
-                <div className="flex md:hidden lg:hidden xl:hidden max-screen-w w-full flex-col mx-auto ml-10 space-y-8">
+                <div className="flex md:hidden lg:hidden xl:hidden w-full flex-col mx-auto ml-10 space-y-8">
                     <div>
                         <p className="font-bold mb-2">PERSONAM HISTORY</p>
                         <div className="flex flex-col">
