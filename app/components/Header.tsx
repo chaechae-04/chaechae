@@ -11,14 +11,12 @@ export default function Header() {
     const [isAnimating, setIsAnimating] = useState(false)
 
     const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen)
         if (isMenuOpen) {
             setIsAnimating(true)
             setTimeout(() => {
-                setIsMenuOpen(false)
                 setIsAnimating(false)
             }, 300)
-        } else {
-            setIsMenuOpen(true)
         }
     }
 
