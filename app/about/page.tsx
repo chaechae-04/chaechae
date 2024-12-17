@@ -105,7 +105,7 @@ export default function About() {
                     </div>
                 </div>
                 {/* Mobile View */}
-                <div className="flex md:hidden lg:hidden xl:hidden w-full flex-col mx-auto ml-10 space-y-8">
+                <div className="flex md:hidden lg:hidden xl:hidden screen-w-full w-full flex-col mx-auto ml-10 space-y-8">
                     <div>
                         <p className="font-bold mb-2">PERSONAM HISTORY</p>
                         <div className="flex flex-col">
