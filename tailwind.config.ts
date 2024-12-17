@@ -17,10 +17,6 @@ export default {
           '0%': { transform: 'scaleY(0)' },
           '100%': { transform: 'scaleY(1)' },
         },
-        slideUp: {
-          '0%': { transform: 'scaleY(1)' },
-          '100%': { transform: 'scaleY(0) '},
-          }
       },
       animation: {
         slideDown: 'slideDown 0.3s ease-out'
