@@ -47,27 +47,27 @@ export default function About() {
                         </p>
                         <div className="flex flex-col mx-auto ml-5 space-y-2">
                             <div className="flex flex-row space-x-2">
-                                <img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=openjdk&logoColor=white" className="rounded-2xl" />
-                                <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" className="rounded-2xl" />
-                                <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" className="rounded-2xl" />
-                                <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=openjdk&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
                             </div>
                             <div className="flex flex-row space-x-2">
-                                <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" className="rounded-2xl"/>
-                                <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" className="rounded-2xl" />
-                                <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" className="rounded-2xl" />
-                                <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-50  hover:opacity-80 transition-opacity duration-5000"/>
+                                <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500  hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" className="rounded-2xl hover:opacity-80 transition-opacity duration-500  hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500  hover:opacity-80 transition-opacity duration-500" />
                             </div>
                             <div className="flex flex-row space-x-2">
-                                <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" className="rounded-2xl" />
-                                <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" className="rounded-2xl" />
-                                <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" className="rounded-2xl" />
-                                <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
                             </div>
                             <div className="flex flex-row space-x-2">
-                                <img src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white" className="rounded-2xl" />
-                                <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white" className="rounded-2xl" />
-                                <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" className="rounded-2xl" />
+                                <img src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
                             </div>
                         </div>                         
                     </div>
@@ -115,21 +115,21 @@ export default function About() {
                         <p className="font-bold mb-2">STACKS</p>
                         <div className="flex space-x-2 flex-wrap space-y-2 w-[80%]">
                             <div />
-                            <img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=openjdk&logoColor=white" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" className="rounded-2xl"/>
-                            <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white" className="rounded-2xl" />
-                            <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" className="rounded-2xl" />
+                            <img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=openjdk&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" className="rounded-2x  hover:opacity-80 transition-opacity duration-500l"/>
+                            <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
                         </div>
                     </div>
 
