@@ -8,13 +8,20 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isMenuVisible, setIsMenuVisible] = useState(false)
 
     const toggleMenu = async () => {
-        setIsMenuOpen(!isMenuOpen)
+        if (isMenuOpen) {
+            setIsMenuVisible(false)
+            setTimeout(() => setIsMenuOpen(false), 500)
+        } else {
+            setIsMenuOpen(true)
+            setTimeout(() => { setIsMenuVisible(true) }, 50)
+        }
     }
 
     return (
-            <nav className="mx-auto max-w-screen-xl px-4 sm:px-10 py-4 flex flex-col">
+            <nav className="mx-auto max-w-screen-xl px-4 sm:px-10 py-4 flex flex-col relative">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="flex flex-row">
                         <img src="/imgs/chaechae.jpg" alt="채채 사진" className="rounded-full aspect-[1/1] w-[14%] md:w-[7%] lg:w-[7%] xl:w-[7%]" />
@@ -32,12 +39,12 @@ export default function Header() {
                 <div style={{ width: '100% '}} className="bg-gray-400 h-px mt-2 mx-auto mt-5" />
 
                 {(isMenuOpen) && (
-                    <div className="absolute top-16 left-0 w-full bg-gray-800 text-white p-4 flex flex-col sm:hidden 
-                                    transform transition-transform duration-300 origin-top 
-                                    animate-slideDown">
-                        <Link href="/projects" className="block hover:text-gray-300 py-2">Projects</Link>
-                        <Link href="/todo" className="block hover:text-gray-300 py-2">To-do</Link>
-                        <Link href="/about" className="block hover:text-gray-300 py-2">About</Link>
+                    <div className={`absolute bottom-4 left-0 translate-y-full w-full bg-gray-800 text-white p-4 flex flex-col sm:hidden 
+                                    transition-bg-opacity transition-opacity duration-500
+                                    ${isMenuVisible ? 'bg-opacity-70 opacity-100' : 'bg-opacity-0 opacity-0' }`}>
+                        <Link href="/projects" className="block hover:text-gray-300 py-2 font-bold">Projects</Link>
+                        <Link href="/todo" className="block hover:text-gray-300 py-2 font-bold">To-do</Link>
+                        <Link href="/about" className="block hover:text-gray-300 py-2 font-bold">About</Link>
                     </div>
                 )}
             </nav>

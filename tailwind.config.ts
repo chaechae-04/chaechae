@@ -13,13 +13,18 @@ export default {
         foreground: "var(--foreground)",
       },
       keyframes: {
-        slideDown: {
-          '0%': { transform: 'scaleY(0)' },
-          '100%': { transform: 'scaleY(1)' },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '0.7' },
+        },
+        fadeOut: {
+          '0%': { opacity: '0.7' },
+          '100%': { opacity: '0' },
         },
       },
       animation: {
-        slideDown: 'slideDown 0.3s ease-out'
+        fadeIn: 'fadeIn 0.5s ease-in forwards',
+        fadeOut: 'fadeOut 0.5s ease-out forwards',
       },
     },
   },
