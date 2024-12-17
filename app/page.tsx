@@ -51,11 +51,25 @@ export default function Home() {
       startPage = Math.max(1, totalPages - 4)
     }
 
+    if (startPage > 2) {
+      buttons.push(
+        <button key={1} onClick={() => setCurrentPage(1)} className="mx-1 px-3 py-1 rounded-lg bg-gray-300 text-black">1</button>
+      )
+      buttons.push(<span key="leftDots">...</span>)
+    }
+
     for (let i = startPage; i <= endPage; i++) {
       buttons.push(
         <button key={i} onClick={() => setCurrentPage(i)} className= {`mx-1 px-3 py-1 rounded-lg ${currentPage === i ? 'bg-blue-500 text-white' : 'bg-gray-300 text-black'}`}>
           {i}
         </button>
+      )
+    }
+
+    if (endPage < totalPages - 1) {
+      buttons.push(<span key="rightDots">...</span>)
+      buttons.push(
+        <button key={totalPages} onClick={() => setCurrentPage(totalPages)} className="mx-1 px-3 py-1 rounded-lg bg-gray-300 text-black">{totalPages}</button>
       )
     }
 
