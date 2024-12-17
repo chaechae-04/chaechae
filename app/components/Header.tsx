@@ -25,7 +25,7 @@ export default function Header() {
                 <div className="flex items-center justify-between">
                     <Link href="/" className="flex flex-row">
                         <img src="/imgs/chaechae.jpg" alt="채채 사진" className="rounded-full aspect-[1/1] w-[14%] md:w-[7%] lg:w-[7%] xl:w-[7%]" />
-                        <p className="ml-5 text-white text-xl sm:text-2xl font-bold my-auto">채채의 개발로그</p>
+                        <p className="ml-5 text-white text-xl sm:text-2xl font-bold my-auto">채채의 테크로그</p>
                     </Link>
                     <div className="hidden sm:flex gap-4 text-gray-300 pr-10 flex-row">
                         <Link href="/projects" className="hover:text-white px-2 text-sm sm:text-base w-[50%]">Projects</Link>
