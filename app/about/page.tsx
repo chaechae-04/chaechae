@@ -27,7 +27,7 @@ export default function About() {
                         <p className="flex text-2xl font-bold mb-3 text-left">
                             PERSONAL HISTORY
                         </p>
-                        <ul className="list-disc list-inside text-gray-300 text-xxs xl:text-xl">
+                        <ul className="list-disc list-inside text-gray-300 text-xl">
                             <li>[국립한국교통대학교] - 컴퓨터 공학 전공 1학년 재학</li>
                         </ul>
                     </div>
@@ -36,8 +36,17 @@ export default function About() {
                         <p className="flex text-2xl font-bold mb-3 text-left">
                             PROJECTS
                         </p>
-                        <ul className="list-disc list-inside text-gray-300 text-xxs xl:text-xl">
-                            <li> <Link href="https://github.com/chaechae-04/LiquorLounge" target="_blank" className="underline">LiquorLounge</Link> : Web Application </li>
+                        <ul className="list-disc list-inside text-gray-300 text-xl">
+                            <ul className="list-disc list-inside text-white text-lg font-bold">
+                                Web Projects
+                                <li> <Link href="https://github.com/chaechae-04/LiquorLounge" target="_blank" className="underline">LiquorLounge</Link></li>
+                            </ul>
+                            &nbsp;
+                            <ul className="list-disc list-inside text-white text-lg font-bold">
+                                Game Projects
+                                <li>Empty !</li>
+                            </ul>
+                            &nbsp;
                         </ul>
                     </div>
 
@@ -107,7 +116,11 @@ export default function About() {
                     <div>
                         <p className="font-bold mb-2">PROJECTS</p>
                         <div className="flex flex-col">
-                            <p> <Link href="https://github.com/chaechae-04/LiquorLounge" target="_blank" className="text-sm font-bold text-gray-300 underline">LiquorLounge</Link> : Web Application</p>
+                            <div className="text-white font-bold">Web Projects</div>
+                            <Link href="https://github.com/chaechae-04/LiquorLounge" target="_blank" className="text-sm font-bold text-gray-300 underline">LiquorLounge</Link>
+                            &nbsp;
+                            <div className="text-white font-bold">Game Projects</div>
+                            <div>Empty !</div>
                         </div>
                     </div>
 
