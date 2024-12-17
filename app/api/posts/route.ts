@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 import { NextResponse } from 'next/server'
 import { PostData } from '@/types/post'
 
-const postsDirectory = path.join(process.cwd(), 'posts')
+const postsDirectory = path.join(process.cwd(),'app', 'posts')
 
 async function getAllPosts(): Promise<PostData[]> {
     const fileNames = fs.readdirSync(postsDirectory)
