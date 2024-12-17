@@ -32,7 +32,7 @@ export default function Header() {
                 <div style={{ width: '100% '}} className="bg-gray-400 h-px mt-2 mx-auto mt-5" />
 
                 {isMenuOpen && (
-                    <div className="absolute top-16 left-0 w-full bg-gray-800 text-white p-4 flex flex-col sm:hidden">
+                    <div className="absolute top-16 left-0 w-full bg-gray-800 text-white p-4 flex flex-col sm:hidden transform transition-transform duration-300 origin-top animate-slideDown">
                         <Link href="/projects" className="block hover:text-gray-300 py-2">Projects</Link>
                         <Link href="/todo" className="block hover:text-gray-300 py-2">To-do</Link>
                         <Link href="/about" className="block hover:text-gray-300 py-2">About</Link>
