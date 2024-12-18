@@ -42,9 +42,9 @@ export default function Header() {
                     <div className={`absolute bottom-4 left-0 translate-y-full w-full bg-gray-800 text-white p-4 flex flex-col sm:hidden 
                                     transition-bg-opacity transition-opacity duration-500
                                     ${isMenuVisible ? 'bg-opacity-70 opacity-100' : 'bg-opacity-0 opacity-0' }`}>
-                        <Link href="/projects" className="block hover:text-gray-300 py-2 font-bold">Projects</Link>
-                        <Link href="/todo" className="block hover:text-gray-300 py-2 font-bold">To-do</Link>
-                        <Link href="/about" className="block hover:text-gray-300 py-2 font-bold">About</Link>
+                        <Link href="/pages/headerTab/projects" className="block hover:text-gray-300 py-2 font-bold">Projects</Link>
+                        <Link href="/pages/headerTab/todo" className="block hover:text-gray-300 py-2 font-bold">To-do</Link>
+                        <Link href="/pages/headerTab/about" className="block hover:text-gray-300 py-2 font-bold">About</Link>
                     </div>
                 )}
             </nav>
