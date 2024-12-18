@@ -11,7 +11,7 @@ export default function About() {
     return (
         <div className="min-h-screen bg-[#051c2c] max-w-full overflow-hidden">
             <Header />
-            <div className="bg-[#051c2c] text-white flex flex-col items-center justify-center mx-auto md:my-[50px] lg:my-[100px] xl:my-[150px]">
+            <div className="bg-[#051c2c] text-white flex flex-col items-center justify-center mx-auto my-[25px] md:my-[50px] lg:my-[100px] xl:my-[150px]">
                 <p className="text-base xl:text-4xl font-bold mb-6">
                     안녕하세요, 저는 [chaechae-04] 입니다.
                     </p>
