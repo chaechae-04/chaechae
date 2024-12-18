@@ -38,11 +38,14 @@ html {
 
 .markdown {
   .explanation {
-    width: 100%;
-    margin: 0 auto;
-    color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    width: 100%;
+    margin: 0 auto;
+
+    font-size: 75%;
+    color: gray;
   }
 }
