@@ -1,6 +1,3 @@
-import Header from '@/app/components/Header'
-import Footer from '@/app/components/Footer'
-
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
