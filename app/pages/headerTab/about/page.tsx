@@ -118,13 +118,18 @@ export default function About() {
 
                     <div>
                         <p className="font-bold mb-2">PROJECTS</p>
-                        <div className="flex flex-col">
-                            <div className="text-white font-bold">Web Projects</div>
-                            <Link href="https://github.com/chaechae-04/LiquorLounge" target="_blank" className="text-sm font-bold text-gray-300 underline">LiquorLounge</Link>
-                            &nbsp;
-                            <div className="text-white font-bold">Game Projects</div>
-                            <div className="text-sm font-bold text-gray-300">Empty !</div>
-                        </div>
+                            <div className="flex flex-col ml-2">
+                                <div className="text-white font-bold">Web Projects</div>
+                                <div className="flex flex-col ml-2">
+                                    <Link href="https://github.com/chaechae-04/LiquorLounge" target="_blank" className="text-sm font-bold text-gray-300 underline">LiquorLounge</Link>
+                                </div>
+                                <br />
+                                
+                                <div className="text-white font-bold">Game Projects</div>
+                                <div className="flex flex-col ml-2">
+                                    <div className="text-sm font-bold text-gray-300">Empty !</div>
+                                </div>
+                            </div>
                     </div>
 
                     <div>
@@ -152,21 +157,21 @@ export default function About() {
 
                     <div>
                         <p className="font-bold mb-5">CONTACT</p>
-                        <div className="flex flex-col">
-                            <div className="flex flex-row space-x-2">
-                                <Link href="https://github.com/chaechae-04" className="flex text-gray-300 hover:text-white mx-1 space-x-2" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faGithub} className="w-6 h-6 mr-2" /> GitHub : chaechae-04
-                                </Link>
-                            </div>
-                            <div className="flex flex-row space-x-2">
-                                <Link href="https://instagram.com/lee.young_s" className="flex text-gray-300 hover:text-white mx-1 space-x-2" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 mr-2" /> Instagram : lee.young_s
-                                </Link>
-                            </div>
-                            <div className="flex flex-row space-x-2">
-                                <Link href="mailto:leeys4903@naver.com" className="flex text-gray-300 hover:text-white mx-1 space-x-2">
-                                    <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 mr-2" /> Email : leeys4903@naver.com
-                                </Link>
+                            <div className="flex flex-col ml-2">
+                                <div className="flex flex-row space-x-2">
+                                    <Link href="https://github.com/chaechae-04" className="flex text-gray-300 hover:text-white mx-1 space-x-2" target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon icon={faGithub} className="w-6 h-6 mr-2" /> GitHub : chaechae-04
+                                    </Link>
+                                </div>
+                                <div className="flex flex-row space-x-2">
+                                    <Link href="https://instagram.com/lee.young_s" className="flex text-gray-300 hover:text-white mx-1 space-x-2" target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 mr-2" /> Instagram : lee.young_s
+                                    </Link>
+                                </div>
+                                <div className="flex flex-row space-x-2">
+                                    <Link href="mailto:leeys4903@naver.com" className="flex text-gray-300 hover:text-white mx-1 space-x-2">
+                                        <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 mr-2" /> Email : leeys4903@naver.com
+                                    </Link>
                             </div>
                         </div>
                     </div>
