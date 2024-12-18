@@ -65,10 +65,13 @@ export default function About() {
                                 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-50  hover:opacity-80 transition-opacity duration-5000"/>
                                 <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500  hover:opacity-80 transition-opacity duration-500" />
                                 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" className="rounded-2xl hover:opacity-80 transition-opacity duration-500  hover:opacity-80 transition-opacity duration-500" />
-                                <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500  hover:opacity-80 transition-opacity duration-500" />
                             </div>
                             <div className="flex flex-row space-x-2">
                                 <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                                <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500  hover:opacity-80 transition-opacity duration-500" />
+                            </div>
+                            <div className="flex flex-row space-x-2">
                                 <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
                                 <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
                                 <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
@@ -135,8 +138,9 @@ export default function About() {
                             <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500"/>
                             <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
                             <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
-                            <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
                             <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-2xl  hover:opacity-80 transition-opacity duration-500" />
+                            <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
                             <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
                             <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
                             <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white" className="rounded-2xl hover:opacity-80 transition-opacity duration-500" />
