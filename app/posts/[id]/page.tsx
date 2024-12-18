@@ -3,11 +3,13 @@ import Footer from '@/app/components/Footer'
 
 import MarkdownRenderer from '@/app/components/MarkdownRender'
 
+import { API_URL } from '@/utils/config'
+
 import { PostData, Props } from '@/types/post'
 
 const getPost = async (id: string): Promise<PostData> => {
     const encodedId = encodeURIComponent(id)
-    const res = await fetch(`http://localhost:3000/api/posts/${encodedId}`, {
+    const res = await fetch(`${API_URL}/api/posts/${encodedId}`, {
         next: { revalidate: 10 }
     })
     if (!res.ok) throw new Error('Filed to fetch post')
