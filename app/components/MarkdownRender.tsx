@@ -7,7 +7,7 @@ import { MarkdownProps } from '@/types/post'
 
 const MarkdownRenderer = ({ content }: MarkdownProps ) => {
     return (
-        <div className="m-5">
+        <div className="m-0 md:m-5 lg:m-5 xl:m-5">
             <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeRaw]}
