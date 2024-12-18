@@ -15,7 +15,7 @@ const MarkdownRenderer = ({ content }: MarkdownProps ) => {
                     code({ children }) {
                         return <SyntaxHighlighter>{children}</SyntaxHighlighter>
                     }
-                }}>
+                }} className="text-xs md:text-base lg:text-lg xl:text-lg">
                 {content}
             </ReactMarkdown>
         </div>
