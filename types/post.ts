@@ -12,3 +12,11 @@ export interface PostParams {
         id: string;
     }
 }
+
+export type Props = {
+    params: Promise<{ id: string }>
+}
+
+export interface MarkdownProps {
+    content: string
+}

@@ -28,9 +28,9 @@ export default function Header() {
                         <p className="ml-5 text-white text-xl sm:text-2xl font-bold my-auto">채채의 테크로그</p>
                     </Link>
                     <div className="hidden sm:flex gap-4 text-gray-300 pr-10 flex-row">
-                        <Link href="/projects" className="hover:text-white px-2 text-sm sm:text-base w-[50%]">Projects</Link>
-                        <Link href="/todo" className="hover:text-white px-2 text-sm sm:text-base w-[50%]">To-do</Link>
-                        <Link href="/about" className="hover:text-white px-2 text-sm sm:text-base w-[15%]">About</Link>
+                        <Link href="/projects" className="hover:text-white px-2 text-sm sm:text-base w-[50%] font-bold">Projects</Link>
+                        <Link href="/todo" className="hover:text-white px-2 text-sm sm:text-base w-[50%] font-bold">To-do</Link>
+                        <Link href="/about" className="hover:text-white px-2 text-sm sm:text-base w-[15%] font-bold">About</Link>
                     </div>
                     <button onClick={toggleMenu} className="flex sm:hidden text-gray-300">
                         <FontAwesomeIcon icon={faBars} className="text-white h-6 w-6" />
