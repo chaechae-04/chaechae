@@ -6,7 +6,7 @@ import { MarkdownProps } from '@/types/post'
 
 const MarkdownRenderer = ({ content }: MarkdownProps ) => {
     return (
-        <article className="prose prose-invert max-w-none">
+        <div className="m-5">
             <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 components={{
@@ -16,7 +16,7 @@ const MarkdownRenderer = ({ content }: MarkdownProps ) => {
                 }}>
                 {content}
             </ReactMarkdown>
-        </article>
+        </div>
     )
 }
 

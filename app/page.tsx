@@ -84,7 +84,11 @@ export default function Home() {
     <div className="min-h-screen bg-[#051c2c]">
       <Header />
       <div className="mt-4">
-        <Image src="/imgs/temp.jpg" width={1920} height={1080} alt="임시 이미지" className="w-3/4 lg:w-1/2 rounded-lg mx-auto" style={{ width: 'auto', height: 'auto' }}/>
+        <Image src="/imgs/temp.jpg" 
+                width={1920} height={1080} 
+                style={{ width: 'auto', height: 'auto' }}
+                className="w-3/4 lg:w-1/2 rounded-lg mx-auto"
+                alt="임시 이미지" />
       </div>
       <TabBar onSelectTab={handleSelectTab} />
       <div className="max-w-7xl mx-auto flex px-4 py-8 space-x-4">
