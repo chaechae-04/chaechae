@@ -7,12 +7,6 @@ export interface PostData {
     content: string
 }
 
-export interface PostParams {
-    params: {
-        id: string;
-    }
-}
-
 export type Props = {
     params: Promise<{ id: string }>
 }
