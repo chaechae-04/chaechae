@@ -26,12 +26,12 @@ export default function Header() {
                     <Link href="/" className="flex flex-row">
                         <img src="/imgs/chaechae.jpg" alt="채채 사진" className="rounded-full aspect-[1/1] w-[14%] md:w-[7%] lg:w-[7%] xl:w-[7%]" />
                         <div className="flex-row my-auto">
-                            <p className="flex ml-5 text-white text-xl sm:text-2xl">
+                            <div className="flex ml-5 text-white text-xl sm:text-2xl">
                                 chae
-                                <p className="flex ml-1 text-gray-300 text-xl sm:text-2xl">
+                                <div className="flex ml-1 text-gray-300 text-xl sm:text-2xl">
                                     tech
-                                </p>
-                            </p>
+                                </div>
+                            </div>
                         </div>
                     </Link>
                     <div className="hidden sm:flex gap-4 text-gray-300 pr-10 flex-row">
