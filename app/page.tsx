@@ -5,6 +5,7 @@
 import Header from '@/app/components/Header'
 import TabBar from '@/app/components/TabBar'
 import Footer from '@/app/components/Footer'
+import CatCursor from '@/app/components/CatCursor'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -83,6 +84,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#051c2c]">
       <Header />
+      <div className="hidden md:block lg:block xl:block">
+        <CatCursor />
+      </div>
       <div className="mt-4">
         <Image src="/imgs/temp.jpg" 
                 width={1920} height={1080} 
