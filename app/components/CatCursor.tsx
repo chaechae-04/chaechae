@@ -71,9 +71,9 @@ const CatCursor: React.FC = () => {
 
     return (
         <div
-            className="absolute w-12 h-12 bg-cover pointer-events-none"
+            className="absolute w-12 h-12 bg-cover pointer-events-none rounded-full"
             style={{
-                backgroundImage: 'url(/imgs/temp.jpg)', 
+                backgroundImage: 'url(/imgs/chaechae.jpg)', 
                 left: catPosition.x,
                 top: catPosition.y,
                 transform: 'translate(-50%, -50%)',
