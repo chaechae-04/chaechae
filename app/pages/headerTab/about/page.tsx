@@ -1,11 +1,11 @@
 import Header from '@/app/components/Header'
 import Footer from '@/app/components/Footer'
 
+import Link from 'next/link'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-
-import Link from 'next/link'
 
 export default function About() {
     return (
