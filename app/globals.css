@@ -39,7 +39,6 @@ html {
 .markdown {
   .explanation {
     display: flex;
-    justify-content: center;
     align-items: center;
     
     width: 100%;
@@ -47,5 +46,66 @@ html {
 
     font-size: 75%;
     color: gray;
+
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .justify-left {
+    justify-content: left;
+  }
+  
+  .justify-right {
+    justify-content: right;
+  }
+
+  .ml-0 {
+    margin-left: 0;
+  }
+
+  .mr-0 {
+    margin-right: 0;
+  }
+
+  .mt-0 {
+    margin-top: 0;
+  }
+
+  .mb-0 {
+    margin-bottom: 0;
+  }
+
+  .ml-2px {
+    margin-left: 2px;
+  }
+
+  .mr-2px {
+    margin-right: 2px;
+  }
+
+  .mt-2px {
+    margin-top: 2px;
+  }
+
+  .mb-2px {
+    margin-bottom: 2px;
+  }
+
+  .ml-4px {
+    margin-left: 4px;
+  }
+
+  .mr-4px {
+    margin-right: 4px;
+  }
+
+  .mt-4px {
+    margin-top: 4px;
+  }
+
+  .mb-4px {
+    margin-bottom: 4px;
   }
 }
