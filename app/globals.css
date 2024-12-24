@@ -37,75 +37,41 @@ html {
 /* Markdown CSS */
 
 .markdown {
-  .explanation {
-    display: flex;
-    align-items: center;
+
+  display: flex;
+  align-items: center;
     
-    width: 100%;
+  width: 100%;
+  margin: 0 auto;
+
+  .img {
     margin: 0 auto;
+    width: 100%;
 
+    flex-direction: column;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  .explanation {
+    margin: 0 auto;
+    width: 100%;
+
+    color: darkgray;
     font-size: 75%;
-    color: gray;
-
   }
 
-  .justify-center {
-    justify-content: center;
-  }
-  
-  .justify-left {
-    justify-content: left;
-  }
-  
-  .justify-right {
-    justify-content: right;
+  .text-left {
+    text-align: left;
   }
 
-  .ml-0 {
-    margin-left: 0;
+  .text-center {
+    text-align: center;
   }
 
-  .mr-0 {
-    margin-right: 0;
-  }
-
-  .mt-0 {
-    margin-top: 0;
-  }
-
-  .mb-0 {
-    margin-bottom: 0;
-  }
-
-  .ml-2px {
-    margin-left: 2px;
-  }
-
-  .mr-2px {
-    margin-right: 2px;
-  }
-
-  .mt-2px {
-    margin-top: 2px;
-  }
-
-  .mb-2px {
-    margin-bottom: 2px;
-  }
-
-  .ml-4px {
-    margin-left: 4px;
-  }
-
-  .mr-4px {
-    margin-right: 4px;
-  }
-
-  .mt-4px {
-    margin-top: 4px;
-  }
-
-  .mb-4px {
-    margin-bottom: 4px;
+  .text-right {
+    text-align: right;
   }
 }
