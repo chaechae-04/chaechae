@@ -32,6 +32,6 @@ type: 'study'
 <ul>
     <li><a href="/pages/posts/sequential-search" style="text-decoration-line: none; font-weight: bold">순차탐색 <<</a></li>
     <li><a href="/pages/posts/depth-first-search" style="text-decoration-line: none; font-weight: bold">깊이우선탐색 <<</a></li>
-    <li><a href="/pages/posts/breadth-first-search" style="text-decoration-line: none; font-weight: bold">너비 우선 탐색 <<</a></li>
+    <li><a href="/pages/posts/breadth-first-search" style="text-decoration-line: none; font-weight: bold">너비우선탐색 <<</a></li>
     <li><a href="/pages/posts/back-tracking" style="text-decoration-line: none; font-weight: bold">백트래킹 <<</a></li>
 </ul>

@@ -23,15 +23,27 @@ type: 'study'
 <br>
 
 ```
+# 순차탐색
+
+# 순차탐색 함수
 def sequential_search(data_list, search_data):
+
+    # 리스트의 길이만큼 반복
     for index in range(len(data_list)):
+
+        # 리스트의 요소중에 찾는 결과가 있다면 1 반환
         if (data_list[index] == search_data):
             return 1
+
+    # 리스트의 요소중에 찾는 결과가 없었다면 -1 반환
     return -1
 
+# search_data 입력
+# data_list 입력
 n = int(input())
 numbers = list(map(int, input().split()))
 
+# 결과값 출력
 print(sequential_search(numbers, n))
 ```
 
@@ -46,6 +58,6 @@ print(sequential_search(numbers, n))
 <ul>
     <li><a href="/pages/posts/brute-force" style="text-decoration-line: none; font-weight: bold">브루트포스 알고리즘 <<</a></li>
     <li><a href="/pages/posts/depth-first-search" style="text-decoration-line: none; font-weight: bold">깊이우선탐색 <<</a></li>
-    <li><a href="/pages/posts/breadth-first-search" style="text-decoration-line: none; font-weight: bold">너비 우선 탐색 <<</a></li>
+    <li><a href="/pages/posts/breadth-first-search" style="text-decoration-line: none; font-weight: bold">너비우선탐색 <<</a></li>
     <li><a href="/pages/posts/back-tracking" style="text-decoration-line: none; font-weight: bold">백트래킹 <<</a></li>
 </ul>
