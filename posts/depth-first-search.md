@@ -80,7 +80,7 @@ type: 'study'
 트리 T 와 정수 N 이 주어질 때, N 이 T 에 있을경우 N 의 Level을, 없을경우 -1을 출력하라.
 
 ## 입력
-첫번째 줄에 N을, 이후에는 트리 T의 구조가 주어진다.
+첫번째 줄에 N을, 이후에는 0 0이 입력될때까지 트리 T의 구조가 주어진다.<br>
 
 ## 출력
 첫번째 줄에 N이 존재할 경우 N의 Level을, 존재하지 않을 경우 -1을 출력한다.
@@ -89,19 +89,68 @@ type: 'study'
 
 ||에제 입력|예제 출력|
 |:-:|:-|:-|
-|1|8<br>0 1<br>0 2<br>1 3<br>1 4<br>2 5<br>2 6<br>3 7<br>4 8<br>5 9<br>7 10|3|
-|2|1<br>0 1<br>0 2<br>1 3<br>1 4<br>2 5<br>2 6<br>3 7<br>4 8<br>5 9<br>7 10|1|
-|3|11<br>0 1<br>0 2<br>1 3<br>1 4<br>2 5<br>2 6<br>3 7<br>4 8<br>5 9<br>7 10|-1|
+|1|8<br>0 1<br>0 2<br>1 3<br>1 4<br>2 5<br>2 6<br>3 7<br>4 8<br>5 9<br>7 10<br>0 0|3|
+|2|1<br>0 1<br>0 2<br>1 3<br>1 4<br>2 5<br>2 6<br>3 7<br>4 8<br>5 9<br>7 10<br>0 0|1|
+|3|11<br>0 1<br>0 2<br>1 3<br>1 4<br>2 5<br>2 6<br>3 7<br>4 8<br>5 9<br>7 10<br>0 0|-1|
 
 <br>
 
 ```
 # 깊이우선탐색 (DFS, Depth First Search)
 
-# 깊이우선탐색 함수
-def DFS(depth, visited, tree, search_data):
+# 깊이를 찾는 함수
+def find_level(N, edges):
+
+    # 그래프 생성
+    graph = {}
+    for parent, child in edges:
+
+        # 부모노드, 자식노드 입력
+        if (parent not in graph):
+            graph[parent] = []
+        if (child not in graph):
+            graph[child] = []
+        graph[parent].append(child)
+        graph[child].append(parent)
     
+    # 깊이우선탐색
+    def dfs(node, level, visited):
+
+        # target을 찾으면 level(깊이) 반환
+        if (node == N):
+            return level
+
+        # 방문 확인
+        visited.add(node)
+        for next_node in graph[node]:
+
+            # 방문을 안했다면
+            if (next_node not in visited):
+                result = dfs(next_node, level + 1, visited)
+                if result != -1:
+                    return result
+
+        # 없을경우 -1 반환
+        return -1
+    return dfs(0, 0, set())
+
+# target, graph_info 입력
+n = int(input())
+edges = []
+while (True):
+    parent, child = map(int, input().split())
+    if (parent == child == 0):
+        break
+    edges.append((parent, child))
+
+# dfs 호출
+print(find_level(n, edges))
 ```
+
+<br>
+
+DFS 하나당 N번의 루프를 돌기 때문에 O(n)의 시간복잡도를 가진다.<br>
+그런데, N개의 정점을 모두 방문해야하므로 최종적으로 <b>n * O(n), O(n^2)</b>를 가진다.<br>
 
 <br>
 
