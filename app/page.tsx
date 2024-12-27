@@ -84,7 +84,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#051c2c]">
       <Header />
-      <div className="hidden md:block lg:block xl:block">
+      {/* <div className="hidden md:block lg:block xl:block"> */}
+      <div className="hidden">
         <CatCursor />
       </div>
       <div className="mt-4">
