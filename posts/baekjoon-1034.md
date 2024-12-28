@@ -1,7 +1,7 @@
 ---
 id : 'baekjoon-1034'
 title: '[백준 1034] Python'
-date: '2024-12-27'
+date: '2024-12-28'
 excerpt: 'Gold IV [1034], 램프 문제풀이 글입니다. 아직 푸는중임'
 type: 'test'
 ---
