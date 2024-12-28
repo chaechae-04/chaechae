@@ -1,6 +1,8 @@
 "use client"
 
 import Link from 'next/link'
+import Image from 'next/image'
+import CatCursor from '@/app/components/CatCursor'
 
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -21,10 +23,11 @@ export default function Header() {
     }
 
     return (
+        <main>
             <nav className="mx-auto max-w-screen-xl px-4 sm:px-10 py-4 flex flex-col relative">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="flex flex-row">
-                        <img src="/imgs/chaechae.jpg" alt="채채 사진" className="rounded-full aspect-[1/1] w-[14%] md:w-[7%] lg:w-[7%] xl:w-[7%]" />
+                        <Image src="/imgs/chaechae.jpg" alt="채채 사진" width="1920" height="800" className="rounded-full aspect-[1/1] w-[14%] md:w-[7%] lg:w-[7%] xl:w-[7%]" />
                         <div className="flex-row my-auto">
                             <div className="flex ml-5 text-white text-xl sm:text-2xl">
                                 chae
@@ -55,5 +58,9 @@ export default function Header() {
                     </div>
                 )}
             </nav>
+            <div className="hidden">
+                <CatCursor />
+            </div>
+        </main>
     )
 }
