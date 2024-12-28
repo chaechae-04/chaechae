@@ -45,6 +45,74 @@ type: 'study'
     <li>'Prim', 'Dijkstra' 알고리즘과 유사하다.</li>
 </ul>
 
+***
+
+## 문제
+정점이 정수 1~9 인 그래프 G 가 주어질 때, 1 에서 9 까지의 최단거리를 출력하라.
+
+## 입력
+각 줄에 그래프의 연결을 입력한다. (0 0 이 입력되면 종료)
+
+## 출력
+첫번째 줄에 1 에서 9 까지의 최단거리를 출력한다.
+
+||예제 입력|예제출력|
+|:-:|:-|:-|
+|1|1 3<br>1 5<br>2 4<br>3 4<br>3 8<br>4 6<br>4 7<br>5 7<br>6 8<br>7 9<br>0 0|3|
+|2|1 4<br>1 6<br>2 3<br>2 4<br>2 6<br>3 5<br>5 7<br>6 7<br>7 8<br>8 9<br>0 0|4|
+
+<br>
+
+```
+# 너비우선탐색 (BFS, Breadth First Search)
+
+# 너비우선탐색
+def bfs(start, target, graph):
+    # (현재 정점, 거리)
+    queue = [(start, 0)]
+    visited = set([start])
+
+    while queue:
+        # 리스트의 첫 번째 요소 꺼내기 (제거)
+        node, distance = queue.pop(0)
+
+        # 목적지 도착
+        if (node == target):
+            return distance
+        
+        # 다음 깊이 탐색
+        for neighbor in graph[node]:
+            if (neighbor not in visited):
+                visited.add(neighbor)
+                queue.append((neighbor, distance + 1))
+
+    # 전체 탐색 후 결과가 없다면 -1
+    return -1
+
+# 그래프 생성
+graph = {}
+for i in range(1, 10):
+    graph[i] = []
+
+# 그래프 입력
+while True:
+    u, v = map(int, input().split())
+    if (u == 0 and v == 0):
+        break
+
+    graph[u].append(v)
+    graph[v].append(u)
+
+print(bfs(1, 9, graph))
+```
+
+<br>
+
+모든 정점을 한 번씩 방문하고, 각 정점에 연결된 간선을 검사하기 떄문에 시간 복잡도는 O(v + e) 이다. /* v : 정점의 수 , e : 간선의 수 */ <br>
+인접 행렬을 사용할 경우 O(v^2) 로도 표현될 수 있다.
+
+<br>
+
 ## 관련 포스트
 
 <ul>
