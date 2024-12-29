@@ -11,6 +11,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isMenuVisible, setIsMenuVisible] = useState(false)
+    const [isCatVisible, setIsCatVisible] = useState(false)
 
     const toggleMenu = async () => {
         if (isMenuOpen) {
@@ -19,6 +20,26 @@ export default function Header() {
         } else {
             setIsMenuOpen(true)
             setTimeout(() => { setIsMenuVisible(true) }, 50)
+        }
+    }
+
+    const catToggleButtonHandler = async () => {
+        setIsCatVisible(!isCatVisible)
+    }
+
+    const Cat = () => {
+        if (isCatVisible) {
+            return (
+                <div className="flex">
+                    <CatCursor />
+                </div>
+            )
+        } else {
+            return (
+                <div className="hidden">
+                    <CatCursor />
+                </div>
+            )   
         }
     }
 
@@ -38,6 +59,13 @@ export default function Header() {
                         </div>
                     </Link>
                     <div className="hidden sm:flex gap-4 text-gray-300 pr-10 flex-row">
+
+                        {/* Cat Visible Toggle Button */}
+                        <label className="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" value="" onClick={catToggleButtonHandler} className="sr-only peer" />
+                            <div className="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 peer-focus:ring-transparent rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700"></div>
+                        </label>
+                        
                         <Link href="/pages/headerTab/projects" className="hover:text-white px-2 text-sm sm:text-base w-[50%] font-bold">Projects</Link>
                         <Link href="/pages/headerTab/todo" className="hover:text-white px-2 text-sm sm:text-base w-[50%] font-bold">To-do</Link>
                         <Link href="/pages/headerTab/about" className="hover:text-white px-2 text-sm sm:text-base w-[15%] font-bold">About</Link>
@@ -58,9 +86,7 @@ export default function Header() {
                     </div>
                 )}
             </nav>
-            <div className="hidden">
-                <CatCursor />
-            </div>
+            <Cat />
         </main>
     )
 }
