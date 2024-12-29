@@ -34,7 +34,7 @@ type: 'design'
 <div class="markdown">
     <div class="col">
         <div class="text-center">
-            <h3>toss tech</h3>
+            <h2>toss tech</h2>
         </div>
         <div class="img">
             <img src="/imgs/MainPageDesignPost/main-page-img2.png" alt="toss tech img" />
@@ -47,14 +47,10 @@ type: 'design'
 
 <br>
 
-**출처 : https://toss.tech 토스테크**
-
-<br>
-
 <div class="markdown">
     <div class="col">
         <div class="text-center">
-            <h3>kakao tech</h3>
+            <h2>kakao tech</h2>
         </div>
         <div class="img">
             <img src="/imgs/MainPageDesignPost/main-page-img3.png" alt="kakao tech img" />
@@ -72,14 +68,10 @@ type: 'design'
 
 <br>
 
-**출처 : https://tech.kakao.com 카카오테크**
-
-<br>
-
 <div class="markdown">
     <div class="col">
         <div class="text-center">
-            <h3>W O O W A T E C H</h3>
+            <h2>WOOWA TECH</h2>
         </div>
         <div class="img">
             <img src="/imgs/MainPageDesignPost/main-page-img5.png" alt="woowa tech img" />
@@ -92,14 +84,10 @@ type: 'design'
 
 <br>
 
-**출처 : https://techblog.woowahan.com 우아한테크**
-
-<br>
-
 <div class="markdown">
     <div class="col">
         <div class="text-center">
-            <h3>NAVER D2</h3>
+            <h2>NAVER D2</h2>
         </div>
         <div class="img">
             <img src="/imgs/MainPageDesignPost/main-page-img6.png" alt="NAVER D2 img" />
@@ -112,6 +100,9 @@ type: 'design'
 
 <br>
 
+**출처 : https://toss.tech 토스테크**
+**출처 : https://tech.kakao.com 카카오테크**
+**출처 : https://techblog.woowahan.com 우아한테크**
 **출처 : https://d2.naver.com/home NAVER D2**
 
 <br>
