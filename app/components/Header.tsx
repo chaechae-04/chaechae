@@ -59,16 +59,16 @@ export default function Header() {
                         </div>
                     </Link>
                     <div className="hidden sm:flex gap-4 text-gray-300 pr-10 flex-row">
+                        <Link href="/pages/headerTab/projects" className="hover:text-white px-2 text-sm sm:text-base w-[50%] font-bold">Projects</Link>
+                        <Link href="/pages/headerTab/todo" className="hover:text-white px-2 text-sm sm:text-base w-[50%] font-bold">To-do</Link>
+                        <Link href="/pages/headerTab/about" className="mr-4 hover:text-white px-2 text-sm sm:text-base w-[15%] font-bold">About</Link>
 
                         {/* Cat Visible Toggle Button */}
                         <label className="relative inline-flex items-center cursor-pointer">
                             <input type="checkbox" value="" onClick={catToggleButtonHandler} className="sr-only peer" />
                             <div className="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 peer-focus:ring-transparent rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700"></div>
                         </label>
-                        
-                        <Link href="/pages/headerTab/projects" className="hover:text-white px-2 text-sm sm:text-base w-[50%] font-bold">Projects</Link>
-                        <Link href="/pages/headerTab/todo" className="hover:text-white px-2 text-sm sm:text-base w-[50%] font-bold">To-do</Link>
-                        <Link href="/pages/headerTab/about" className="hover:text-white px-2 text-sm sm:text-base w-[15%] font-bold">About</Link>
+
                     </div>
                     <button onClick={toggleMenu} className="flex sm:hidden text-gray-300">
                         <FontAwesomeIcon icon={faBars} className="text-white h-6 w-6" />
