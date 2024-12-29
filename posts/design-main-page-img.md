@@ -1,5 +1,5 @@
 ---
-id : 'main-page-img'
+id : 'designmain-page-img'
 title: '[PIGMA] 홈 화면 이미지'
 date: '2024-12-29'
 excerpt: '메인 페이지 이미지 디자인 도전기 1일차'

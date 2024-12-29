@@ -1,5 +1,5 @@
 ---
-id : 'baekjoon-2869'
+id : 'test-baekjoon-2869'
 title: '[백준 2869] Python'
 date: '2024-12-24'
 excerpt: 'Bronze I [2869], 달팽이는 올라가고 싶다. 문제풀이(정답포함) 글입니다.'

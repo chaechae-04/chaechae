@@ -1,5 +1,5 @@
 ---
-id : 'baekjoon-1027'
+id : 'test-baekjoon-1027'
 title: '[백준 1027] Python'
 date: '2024-12-24'
 excerpt: 'Gold IV [1027], 고층 건물 문제풀이(정답포함) 글입니다.'
