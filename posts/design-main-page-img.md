@@ -52,15 +52,16 @@ type: 'design'
         <div class="text-center">
             <h2>kakao tech</h2>
         </div>
-        <div class="img">
-            <img src="/imgs/MainPageDesignPost/main-page-img3.png" alt="kakao tech img" />
-            <div class="explanation text-center">
-                kakao tech 메인화면
-            </div>
-            <br>
-            <img src="/imgs/MainPageDesignPost/main-page-img4.png" alt="kakao tech img" />
-            <div class="explanation text-center">
-                kakao tech , tech tag 선택
+            <div class="img">
+                <img src="/imgs/MainPageDesignPost/main-page-img3.png" alt="kakao tech img" />
+                <div class="explanation text-center">
+                    kakao tech 메인화면
+                </div>
+                <br>
+                <img src="/imgs/MainPageDesignPost/main-page-img4.png" alt="kakao tech img" />
+                <div class="explanation text-center">
+                    kakao tech , tech tag 선택
+                </div>
             </div>
         </div>
     </div>
