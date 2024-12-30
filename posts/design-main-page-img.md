@@ -101,10 +101,10 @@ type: 'design'
 
 <br>
 
-**출처 : https://toss.tech 토스테크**
-**출처 : https://tech.kakao.com 카카오테크**
-**출처 : https://techblog.woowahan.com 우아한테크**
-**출처 : https://d2.naver.com/home NAVER D2**
+**출처 : https://toss.tech 토스테크**   
+**출처 : https://tech.kakao.com 카카오테크**   
+**출처 : https://techblog.woowahan.com 우아한테크**   
+**출처 : https://d2.naver.com/home NAVER D2**   
 
 <br>
 
