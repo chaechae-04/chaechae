@@ -1,5 +1,5 @@
 ---
-id : 'designmain-page-img'
+id : 'designmain-page-img1'
 title: '[PIGMA] 홈 화면 이미지'
 date: '2024-12-29'
 excerpt: '메인 페이지 이미지 디자인 도전기 1일차'
@@ -101,13 +101,16 @@ type: 'design'
 
 <br>
 
-**출처 : https://toss.tech 토스테크**   
-**출처 : https://tech.kakao.com 카카오테크**   
-**출처 : https://techblog.woowahan.com 우아한테크**   
-**출처 : https://d2.naver.com/home NAVER D2**   
+**출처**   
+**https://toss.tech 토스테크**   
+**https://tech.kakao.com 카카오테크**   
+**https://techblog.woowahan.com 우아한테크**   
+**https://d2.naver.com/home NAVER D2**   
 
 <br>
 
 
 
-그 중 마음에 들었던게 toss tech 의 화면구성. 좌우로 길고 위아래로 얇은 사진 속에 그 정체성이 들어남과 동시에 toss tech, 공백포함 9글자로 블로그 소개까지 너무 마음에 들었다.
+그 중 마음에 들었던게 toss tech 의 화면구성. 좌우로 길고 위아래로 얇은 사진 속에 그 정체성이 들어남과 동시에 toss tech, 공백포함 9글자로 블로그 소개까지 너무 마음에 들었다. <br>
+첫날에는 다른 공부를 하다가 중간에 시작한거라, 참고할 페이지만 찾았다. <br>
+2일차부터는 제대로 만들기 시작해보자.
