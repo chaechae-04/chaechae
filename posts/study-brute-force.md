@@ -1,5 +1,5 @@
 ---
-id : 'brute-force'
+id : 'study-brute-force'
 title: '[알고리즘] 브루트포스'
 date: '2024-12-27'
 excerpt: '브루트포스 알고리즘에 관한 공부 글입니다.'

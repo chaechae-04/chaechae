@@ -1,7 +1,7 @@
 ---
 id : 'test-baekjoon-1034'
 title: '[백준 1034] Python'
-date: '2024-12-28'
+date: '2025-01-01'
 excerpt: 'Gold IV [1034], 램프 문제풀이 글입니다. 아직 푸는중임'
 type: 'test'
 ---
@@ -28,3 +28,57 @@ type: 'test'
 |4|5 1<br>0<br>1<br>0<br>1<br>0<br>1000|2|
 |5|14 3<br>011<br>101<br>001<br>000<br>111<br>001<br>101<br>111<br>110<br>000<br>111<br>010<br>110<br>001<br>6|4|
 |6|5 2<br>01<br>10<br>01<br>01<br>10<br>1|3|
+
+## 풀이 과정
+
+<div class="markdown">
+    <div class="col">
+        <div class="my-0">
+
+    # dfs 함수
+    def dfs(Matrix, depth) :
+
+        global answer
+
+        # 최대 깊이가 k 까지 가면 행 계산
+        if depth == k :
+            result = 0
+
+        for i in range(col) :
+            result += 1 if sum(Matrix[i]) == row else 0
+        
+        return result
+
+    # 열 변경
+    for i in range(row) :
+        new_matrix = Matrix
+
+        for j in range(col) :
+            new_matrix[j][i] = 1 if new_matrix[j][i] == 0 else 0
+        
+        # dfs 호출
+        answer = dfs(new_matrix, depth + 1) 
+
+    # 입력
+    col, row = map(int, input().split())
+    m = [list(map(int, input())) for _ in range(col)]
+    k = int(input())
+    answer = 0
+
+    # 함수 호출
+    answer = dfs(m, 0)
+
+    # 출력
+    print(answer)
+\
+        </div>
+        <div class="explanation text-center">
+            초기 코드 구성
+        </div>
+        <div>
+            초기엔 이렇게 코드를 작성했는데, 지금 보면 너무 당연하게도 오답이다. <br>
+            출력을 살펴보니 나오는 문구는 **'None'** <br>
+            아무래도 answer 에 제대로 return이 안되는 것 같다.
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 ---
 id : 'designmain-page-img1'
-title: '[PIGMA] 홈 화면 이미지'
+title: '[PIGMA] 기업 기술블로그 참고하기'
 date: '2024-12-29'
 excerpt: '메인 페이지 이미지 디자인 도전기 1일차'
 type: 'design'
