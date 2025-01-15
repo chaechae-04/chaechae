@@ -2,7 +2,7 @@
 id : 'test-programmers-3'
 title: '[프로그래머스 | 이모티콘 할인행사] Java'
 date: '2025-01-15'
-excerpt: '2023 KAKAO BLIND RECRUITMENT Lv.2 [이모티콘 할인행사] 문제풀이(정답 포함) 글입니다.'
+excerpt: '2023 KAKAO BLIND RECRUITMENT (3번 문제) [이모티콘 할인행사] 문제풀이(정답 포함) 글입니다.'
 type: 'test'
 ---
 

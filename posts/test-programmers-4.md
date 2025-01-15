@@ -2,7 +2,7 @@
 id : 'test-programmers-4'
 title: '[프로그래머스 | 택배 배달과 수거하기] Java'
 date: '2025-01-15'
-excerpt: '2023 KAKAO BLIND RECRUITMENT Lv.2 [택배 배달과 수거하기] 문제풀이 글입니다. 아직 푸는중임'
+excerpt: '2023 KAKAO BLIND RECRUITMENT (2번 문제) [택배 배달과 수거하기] 문제풀이 글입니다. 아직 푸는중임'
 type: 'test'
 ---
 
