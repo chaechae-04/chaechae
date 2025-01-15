@@ -1,8 +1,8 @@
 ---
 id : 'test-programmers-1'
-title: '[프로그래머스 광물 캐기] Java'
+title: '[프로그래머스 | 광물 캐기] Java'
 date: '2025-01-13'
-excerpt: 'Lv.2 [광물 캐기] 문제풀이(정답 포함) 글입니다.'
+excerpt: '연습문제 Lv.2 [광물 캐기] 문제풀이(정답 포함) 글입니다.'
 type: 'test'
 ---
 
