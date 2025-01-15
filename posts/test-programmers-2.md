@@ -2,7 +2,7 @@
 id : 'test-programmers-2'
 title: '[프로그래머스 개인정보 수집 유효기간] Java'
 date: '2025-01-15'
-excerpt: 'Lv.1 [개인정보 수집 유효기간] 문제풀이 글입니다. 아직 푸는중임'
+excerpt: 'Lv.1 [개인정보 수집 유효기간] 문제풀이(정답 포함) 글입니다.'
 type: 'test'
 ---
 
