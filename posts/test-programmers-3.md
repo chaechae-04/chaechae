@@ -93,3 +93,56 @@ type: 'test'
 |\[[40, 2900], [23, 10000], [11, 5200], [5, 5900], [40, 3100], [27, 9200], [32, 6900]]|[1300, 1500, 1600, 4900]|[4, 13860]|
 
 ## 풀이 과정
+
+모든 경우의 수를 계산해서 최대한 많은 유저가 이모티콘+ 에 가입하고, 최대한 많은 매출을 낼 수 있는 경우의 수를 찾는게 이 문제의 목표이기 때문에 완전 탐색 기법을 사용해야겠다고 생각했고, 내가 가장 많이 사용했던 완전 탐색 기법인 DFS 를 사용하기로 했다.
+
+~~~
+class Solution {
+    public int[] solution(int[][] users, int[] emoticons) {
+        int[] result = new int[2];
+        int[] discounts = {10, 20, 30, 40};
+        dfs(0, new int[emoticons.length], users, emoticons, discounts, result);
+        return result;
+    }
+
+    void dfs(int depth, int[] rates, int[][] users, int[] emoticons, int[] discounts, int[] result) {
+        int subscribers = 0;
+        int totalNonSubPurchase = 0;
+
+        for (int[] user : users) {
+            int userLimit = user[1];
+            int userMinDiscount = user[0];
+            int totalPurchase = 0;
+
+            // 현재까지 결정된 할인율 계산
+            for (int i = 0; i < depth; i++) {
+                if (rates[i] >= userMinDiscount) {
+                    totalPurchase += emoticons[i] * (100 - rates[i]) / 100;
+                }
+            }
+
+            if (totalPurchase >= userLimit) {
+                subscribers++;
+            } else {
+                totalNonSubPurchase += totalPurchase;
+            }
+        }
+
+        // 최댓값 갱신
+        if (subscribers > result[0] || (subscribers == result[0] && totalNonSubPurchase > result[1])) {
+            result[0] = subscribers;
+            result[1] = totalNonSubPurchase;
+        }
+
+        if (depth == emoticons.length) {
+            return;
+        }
+
+        // 다음 할인율
+        for (int discount : discounts) {
+            rates[depth] = discount;
+            dfs(depth + 1, rates, users, emoticons, discounts, result);
+        }
+    }
+}
+~~~
