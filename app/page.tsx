@@ -5,6 +5,7 @@
 import Header from '@/app/components/Header'
 import TabBar from '@/app/components/TabBar'
 import Footer from '@/app/components/Footer'
+import InfoContent from '@/app/components/InfoContent'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -118,13 +119,13 @@ export default function Home() {
         </div>
         {/* Desctop View */}
         <aside className="hidden md:flex lg:flex xl:flex w-1/4 bg-[#0A2540] p-4 rounded-lg">
-              <h3 className="text-white text-lg font-bold md-4">추가 정보</h3>
+          <InfoContent />
         </aside>
       </div>
       {/* Mobile View */}
       <div />
-      <div className="flex md:hidden lg:hidden xl:hidden bg-[#0A2540] rounded-lg max-w-7xl mx-4 flex px-4 py-8 space-x-4">
-        <h3 className="text-white text-lg font-bold md-4">추가 정보</h3>
+      <div className="flex md:hidden lg:hidden xl:hidden bg-[#0A2540] rounded-lg max-w-7xl mx-4 px-4 py-8 space-x-4">
+        <InfoContent />
       </div>
       <Footer />
     </div>
