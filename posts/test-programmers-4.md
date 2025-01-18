@@ -1,8 +1,8 @@
 ---
 id : 'test-programmers-4'
 title: '[프로그래머스 | 택배 배달과 수거하기] Java'
-date: '2025-01-15'
-excerpt: '2023 KAKAO BLIND RECRUITMENT (2번 문제) [택배 배달과 수거하기] 문제풀이 글입니다. 아직 푸는중임'
+date: '2025-01-16'
+excerpt: '2023 KAKAO BLIND RECRUITMENT (2번 문제) [택배 배달과 수거하기] 문제풀이(정답 포함) 글입니다.'
 type: 'test'
 ---
 
@@ -74,3 +74,66 @@ type: 'test'
 |2|7|[1, 0, 2, 0, 1, 0, 2]|[0, 2, 0, 1, 0, 2, 0]|30|
 
 ## 풀이 과정
+
+우선적으로 생각한 방법은 0이 아닌 가장 먼 배달/수거가 이루어져야하는 집부터 최대로 많은 양을 배달하며 진행하는 방식이다. <br>
+테스트 케이스 1번으로 설명하자면, 한번에 실을 수 있는 박스의 양은 4개니까 배달을 해야하는 가장 먼 집인 5번집부터 배달해야하는 갯수를 체크한다. <br>
+5번집은 2개, 4번집은 1개 까지 배달을 하고, 3번집은 3개가 이루어져야 하기 때문에 1개만 배달을 하고 2개로 바꿔준다. <br>
+똑같은 방법으로 수거를 해야하는 집 또한 갯수를 체크한다. <br>
+5번집은 0개니까 지나가고, 4번집 4개 수거하면 최대치이기 때문에 나머지 집들은 지나간다. <br>
+그 이후 배달한 최대치까지의 거리를 더한다. 이 때 배달하러 가는 거리 + 돌아오는 거리 를 더해야 하기 때문에, * 2 를 해준다. <br>
+모든 집을 배달하면 배달한 거리를 return 해준다. <br>
+
+~~~
+class Solution {
+    public long solution(int cap, int n, int[] deliveries, int[] pickups) {
+
+        long answer = 0;
+        int length = n - 1;
+
+        // 배달 가야하는 거리가 0 이 되면 종료
+        while (length != -1) {
+
+            // 가야 할 거리 계산
+            if (deliveries[length] == 0 && pickups[length] == 0) {
+                length--;
+                continue;
+            }
+
+            // 배달
+            func(deliveries, cap, length);
+
+            // 수거
+            func(pickups, cap, length);
+
+            // 이동한 총 거리 계산
+            answer += (length + 1) * 2L;
+
+        }
+
+        return answer;
+
+    }
+
+    private void func(int[] arr, int cap, int length) {
+
+        // 가장 먼 곳 부터 배달, 수거 작업
+        for (int i = length; i >= 0; i--) {
+
+            // 최대치만큼 작업
+            if (cap == 0) {
+                break;
+            }
+
+            // 남은 작업이 더이상 없을때까지 반복
+            if (arr[i] != 0) {
+                arr[i]--;
+                cap--;
+                i++;
+            }
+
+        }
+
+    }
+    
+}
+~~~
