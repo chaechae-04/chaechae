@@ -15,7 +15,7 @@ XX산은 n개의 지점으로 이루어져 있습니다. 각 지점은 1부터 n
 당신은 XX산의 출입구 중 한 곳에서 출발하여 산봉우리 중 한 곳만 방문한 뒤 다시 원래의 출입구로 돌아오는 등산코스를 정하려고 합니다. 다시 말해, 등산코스에서 출입구는 처음과 끝에 한 번씩, 산봉우리는 한 번만 포함되어야 합니다.<br>
 당신은 이러한 규칙을 지키면서 intensity가 최소가 되도록 등산코스를 정하려고 합니다.<br>
 다음은 XX산의 지점과 등산로를 그림으로 표현한 예시입니다.<br>
-
+<br>
 <div class="markdown">
     <div class="img">
         <img src="/imgs/programmers6/programmers6_1.png" alt="programmers6_1 img" />
@@ -32,7 +32,7 @@ XX산은 n개의 지점으로 이루어져 있습니다. 각 지점은 1부터 n
 
 위의 예시에서 1-2-5-4-3 과 같은 등산코스는 처음 출발한 원래의 출입구로 돌아오지 않기 때문에 잘못된 등산코스입니다. 또한 1-2-5-6-4-3-2-1 과 같은 등산코스는 코스의 처음과 끝 외에 3번 출입구를 방문하기 때문에 잘못된 등산코스입니다.<br>
 등산코스를 3-2-5-4-3 과 같이 정했을 때의 이동경로를 그림으로 나타내면 아래와 같습니다.<br>
-
+<br>
 <div class="markdown">
     <div class="img">
         <img src="/imgs/programmers6/programmers6_2.png" alt="programmers6_2 img" />
@@ -44,7 +44,7 @@ XX산은 n개의 지점으로 이루어져 있습니다. 각 지점은 1부터 n
 <br>
 이때, 휴식 없이 이동해야 하는 시간 중 가장 긴 시간은 5시간입니다. 따라서 이 등산코스의 intensity는 5입니다.<br>
 등산코스를 1-2-4-5-6-4-2-1 과 같이 정했을 때의 이동경로를 그림으로 나타내면 아래와 같습니다.<br>
-
+<br>
 <div class="markdown">
     <div class="img">
         <img src="/imgs/programmers6/programmers6_3.png" alt="programmers6_3 img" />
