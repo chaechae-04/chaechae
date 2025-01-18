@@ -10,7 +10,7 @@ type: 'test'
 
 <div class="markdown">
     <div class="img">
-        <img src="/imgs/programmers4/programmers4_1.png" alt="DFS img 1" />
+        <img src="/imgs/programmers4/programmers4_1.png" alt="programmers4_1 img" />
         <div class="explanation text-center">
             참고 자료
         </div>
