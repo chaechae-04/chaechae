@@ -39,3 +39,31 @@ XYZ 마트는 일정한 금액을 지불하면 10일 동안 회원 자격을 부
 
 ## 풀이 과정
 
+~~~
+import Foundation
+
+func solution(_ want:[String], _ number:[Int], _ discount:[String]) -> Int {
+        
+    var result = 0
+    var wantDict: [String: Int] = [:]
+        
+    for i in 0..<want.count {
+        wantDict[want[i]] = number[i]
+    }
+        
+    for i in 0...discount.count - 10 {
+        var tempDict = wantDict
+        for j in i..<i + 10 {
+            if let count = tempDict[discount[j]] {
+                tempDict[discount[j]] = count - 1
+            }
+        }
+            
+        if tempDict.values.allSatisfy({ $0 == 0 }) {
+            result += 1
+        }
+    }
+        
+    return result
+}
+~~~
