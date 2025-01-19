@@ -18,6 +18,9 @@ type: 'test'
 * __Lv.1 List__
     **1. 명예의 전당**
     **2. 추억 점수**
+    **3. 기사단원의 무기**
+    **4. 2016년**
+    **5. 과일 장수**
 
 ***
 
@@ -153,3 +156,78 @@ func solution(_ name:[String], _ yearning:[Int], _ photo:[[String]]) -> [Int] {
 ~~~
 
 <br>
+
+~~~
+// 기사단원의 무기
+
+import Foundation
+
+func solution(_ number:Int, _ limit:Int, _ power:Int) -> Int {
+        
+    var answer: Int = 0
+        
+    for idx in 1...number {
+        answer += divisor(idx) > limit ? power : divisor(idx)
+    }
+        
+    return answer
+}
+    
+func divisor(_ number:Int) -> Int {
+        
+    var divisor_set = Set<Int>()
+        
+    for num in 1...Int(sqrt(Double(number))) {
+        if (Int(number) % num == 0) {
+            divisor_set.insert(num)
+            divisor_set.insert(number / num)
+        }
+    }
+        
+    return divisor_set.count
+}
+~~~
+
+<br>
+
+~~~
+// 2016년
+
+func solution(_ a:Int, _ b:Int) -> String {
+    let days: [Int] = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    let weekdayString: [String] = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
+        
+    var totalDays: Int = (b - 1) + 5
+        
+    for i in 0..<(a - 1) {
+        totalDays += days[i]
+    }
+        
+    return weekdayString[totalDays % 7]
+}
+~~~
+
+<br>
+
+~~~
+// 과일 장수
+
+import Foundation
+
+func solution(_ k:Int, _ m:Int, _ score:[Int]) -> Int {
+        
+    var answer: Int = 0
+    let descending: [Int] = score.sorted(by: >)
+    let d_count = descending.count
+        
+    for idx in 0..<(d_count / m) + (d_count % m == 0 ? 0 : 1) {
+            
+        if (idx + 1) * m > d_count { break }
+            
+        answer += (descending[idx * m..<(idx + 1) * m].min() ?? 0) * m
+                
+    }
+        
+    return answer
+}
+~~~
