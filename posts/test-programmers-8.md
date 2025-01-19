@@ -17,6 +17,7 @@ type: 'test'
     <br>
 * __Lv.1 List__
     **1. 명예의 전당**
+    **2. 추억 점수**
 
 ***
 
@@ -119,6 +120,32 @@ func solution(_ k:Int, _ score:[Int]) -> [Int] {
             answer.append(min_num)
         }
     }
+    return answer
+}
+~~~
+
+***
+
+~~~
+// 추억 점수
+
+import Foundation
+
+func solution(_ name:[String], _ yearning:[Int], _ photo:[[String]]) -> [Int] {
+        
+    var answer: [Int] = []
+    var result: Int
+        
+    for strArr in photo {
+        result = 0
+        for str in strArr {
+            if name.contains(str), let index = name.firstIndex(of: str) {
+                result += yearning[index]
+            }
+        }
+        answer.append(result)
+    }
+        
     return answer
 }
 ~~~
