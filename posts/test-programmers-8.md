@@ -36,7 +36,7 @@ func solution(_ str1: String, _ str2: String) -> Int {
 
 ~~~
 
-***
+<br>
 
 ~~~
 // 공배수
@@ -48,7 +48,7 @@ func solution(_ number:Int, _ n:Int, _ m:Int) -> Int {
 }
 ~~~
 
-***
+<br>
 
 ~~~
 // 부분 문자열인지 확인하기
@@ -60,7 +60,7 @@ func solution(_ my_string:String, _ target:String) -> Int {
 }
 ~~~
 
-***
+<br>
 
 ~~~
 // 배열의 원소 삭제하기
@@ -81,7 +81,7 @@ func solution(_ arr:[Int], _ delete_list:[Int]) -> [Int] {
 }
 ~~~
 
-***
+<br>
 
 ~~~
 // 문자열로 변환
@@ -92,6 +92,8 @@ func solution(_ n:Int) -> String {
     return String(n)
 }
 ~~~
+
+***
 
 ### Lv.1
 
@@ -124,7 +126,7 @@ func solution(_ k:Int, _ score:[Int]) -> [Int] {
 }
 ~~~
 
-***
+<br>
 
 ~~~
 // 추억 점수
@@ -149,3 +151,5 @@ func solution(_ name:[String], _ yearning:[Int], _ photo:[[String]]) -> [Int] {
     return answer
 }
 ~~~
+
+<br>
