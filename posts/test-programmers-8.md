@@ -1,7 +1,7 @@
 ---
 id : 'test-programmers-8'
 title: '[프로그래머스 | 기초 문제 풀기] Swift'
-date: '2025-01-17'
+date: '2025-01-19'
 excerpt: 'Swift 문법 공부를 위한 Programmers[Lv.0 ~ 1] 문제 풀이 노트입니다.'
 type: 'test'
 ---

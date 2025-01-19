@@ -1,7 +1,7 @@
 ---
 id : 'test-programmers-7'
 title: '[프로그래머스 | 가장 큰 수] Java'
-date: '2025-01-17'
+date: '2025-01-19'
 excerpt: '정렬 문제 Lv.2 [가장 큰 수] 문제풀이(정답 포함) 글입니다.'
 type: 'test'
 ---

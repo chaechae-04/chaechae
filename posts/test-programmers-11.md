@@ -1,7 +1,7 @@
 ---
 id : 'test-programmers-11'
 title: '[프로그래머스 | 프로세스] Swift'
-date: '2025-01-18'
+date: '2025-01-20'
 excerpt: '스택/큐 Lv.2 [프로세스] 문제풀이(정답 포함) 글입니다.'
 type: 'test'
 ---

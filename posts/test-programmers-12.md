@@ -1,7 +1,7 @@
 ---
 id : 'test-programmers-12'
 title: '[프로그래머스 | 뒤에 있는 큰 수 찾기] Swift'
-date: '2025-01-18'
+date: '2025-01-20'
 excerpt: '연습문제 Lv.2 [뒤에 있는 큰 수 찾기] 문제풀이(정답 포함) 글입니다.'
 type: 'test'
 ---
