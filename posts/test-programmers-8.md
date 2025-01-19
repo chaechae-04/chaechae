@@ -2,7 +2,7 @@
 id : 'test-programmers-8'
 title: '[프로그래머스 | 기초 문제 풀기] Swift'
 date: '2025-01-17'
-excerpt: 'Swift 문법 공부를 위한 Lv.0 문제 풀이 노트입니다.'
+excerpt: 'Swift 문법 공부를 위한 [Lv.0 ~ 1] 문제 풀이 노트입니다.'
 type: 'test'
 ---
 
@@ -21,6 +21,8 @@ type: 'test'
 ***
 
 ## 풀이 코드
+
+### Lv.0
 
 ~~~
 // 부분 문자열
@@ -87,5 +89,36 @@ import Foundation
 
 func solution(_ n:Int) -> String {
     return String(n)
+}
+~~~
+
+### Lv.1
+
+~~~
+// 명예의 전당
+
+import Foundation
+
+func solution(_ k:Int, _ score:[Int]) -> [Int] {
+        
+    var arr: [Int] = []
+    var answer: [Int] = []
+        
+    for n in score {
+        if arr.count < k {
+            arr.append(n)
+            answer.append(arr.min() ?? 0)
+        } else {
+            var min_num = arr.min() ?? 0
+                
+            if min_num < n, let index = arr.firstIndex(of: min_num) {
+                arr.remove(at: index)
+                arr.append(n)
+            }
+            min_num = arr.min() ?? 0
+            answer.append(min_num)
+        }
+    }
+    return answer
 }
 ~~~
