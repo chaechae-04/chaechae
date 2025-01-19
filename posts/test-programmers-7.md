@@ -1,8 +1,8 @@
 ---
 id : 'test-programmers-6'
-title: '[프로그래머스 | 등산코스 정하기] Java'
-date: '2025-01-16'
-excerpt: '2023 KAKAO TECH INTERNSHIP (4번 문제) [등산코스 정하기] 문제풀이(정답 포함) 글입니다.'
+title: '[프로그래머스 | 가장 큰 수] Java'
+date: '2025-01-17'
+excerpt: '정렬 문제 Lv.2 [가장 큰 수] 문제풀이(정답 포함) 글입니다.'
 type: 'test'
 ---
 
