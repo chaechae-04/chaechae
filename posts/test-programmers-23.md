@@ -2,7 +2,7 @@
 id : 'test-programmers-23'
 title: '[프로그래머스 | [1차] 뉴스 클러스터링] Swift'
 date: '2025-01-22'
-excerpt: '2018 KAKAO BLIND RECRUITMENT (5번 문제) [[1차] 뉴스 클러스터링] 문제풀이(정답 포함) 글입니다.'
+excerpt: '2018 KAKAO BLIND RECRUITMENT (1차 5번 문제) [[1차] 뉴스 클러스터링] 문제풀이(정답 포함) 글입니다.'
 type: 'test'
 ---
 
