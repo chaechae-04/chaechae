@@ -34,7 +34,7 @@ n개의 노드가 있는 그래프가 있습니다. 각 노드는 1부터 n까�
 ## 풀이 과정
 
 **사용한 알고리즘** <br>
-DFS -> Dijkstra -> BFS(해결)
+DFS(실패) -> Dijkstra(실패) -> BFS(해결)
 
 ~~~
 func solution(_ n:Int, _ edge:[[Int]]) -> Int {

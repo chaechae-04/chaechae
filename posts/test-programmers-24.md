@@ -92,6 +92,10 @@ LZW 압축은 다음 과정을 거친다.<br>
 
 ## 풀이 과정
 
+사전에 있으면 end += 1<br>
+사전에 없으면 answer.append(idx) , words.append(str)<br>
+반복문 끝나고 마지막 남은 값도 출력해야하기 때문에 idx 계산 후 answer.append(idx) 로 마무리
+
 ~~~
 func solution(_ msg:String) -> [Int] {
         

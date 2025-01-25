@@ -33,6 +33,10 @@ type: 'test'
 
 ## 풀이 과정
 
+stack 에 현재 반복문의 변수(idx) 를 저장하고, numbers\[stack.last!] 에 해당하는 값이 numbers\[idx] 보다 작다면, index 라는 상수에 stack.popLast()! 를 해주고, answer\[index] 에 numbers\[idx]를 반환<br>
+stack 을 사용해서 O(n) 의 시간복잡도(반복문 한번)로 문제를 해결할 수 있었다.<br>
+이 방법을 생각해내기 전에는 이중 반복문으로 코드를 작성해 O(n^2)의 시간복잡도를 가지게 되었고, 그로 인해 시간초과가 떴다.
+
 ~~~
 import Foundation
 

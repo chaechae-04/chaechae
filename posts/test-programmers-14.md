@@ -35,6 +35,8 @@ type: 'test'
 
 ## 풀이 과정
 
+var isVisited: \[Bool] = \[Bool]() 을 전역변수로 선언해 모든 탐색에 하나의 방문 조건만을 사용하고, dfs 호출 조건을 isVisited\[i] 로 사용해 한번 탐색 할 때 answer 를 +1 해주는식으로, 인접한 위치에 붙어있는 네트워크를 감지
+
 ~~~
 import Foundation
 

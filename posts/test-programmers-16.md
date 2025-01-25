@@ -52,6 +52,10 @@ type: 'test'
 
 ## 풀이 과정
 
+비교를 위해 cities 를 가져올 때 city 값에 .lowercased() 를 사용<br>
+cache 에 있으면 현재 city 를 remove 후 append (앞으로 새로고침), answer += 1<br>
+cache 에 없으면 arr을 slice (arr\[1...arr.count - 1]) 해서 새로운 arr 생성 후 현재 city append, answer += 5
+
 ~~~
 func solution(_ cacheSize:Int, _ cities:[String]) -> Int {
     var answer: Int = 0
