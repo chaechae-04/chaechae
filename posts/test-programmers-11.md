@@ -44,6 +44,16 @@ type: 'test'
 
 ## 풀이 과정
 
+queue 형식으로 구현 할 때 removeFirst() 함수를 사용하기보다는<br>
+~~~
+let deque = queue.first!<br>
+queue = queue.dropFirst()<br>
+~~~
+로 구현한다면 시간 복잡도가 O(n) 에서 O(1) 이 된다.<br>
+removeFirst() 는 가장 앞의 값을 꺼내고, 모든 값의 인덱스를 -1 하는 과정을 거치지만,<br>
+dropFirst() 는 가장 앞의 값을 꺼내고, 해더의 포인터값을 +1 하는 형식이다.<br>
+문제 풀기 전에 알았으면 좋았을듯
+
 ~~~
 import Foundation
 

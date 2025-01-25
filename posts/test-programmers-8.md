@@ -28,6 +28,8 @@ type: 'test'
 
 ### Lv.0
 
+contains : 값이 포함되어 있는지 여부를 확인
+
 ~~~
 // 부분 문자열
 
@@ -65,6 +67,10 @@ func solution(_ my_string:String, _ target:String) -> Int {
 
 <br>
 
+\[arr].firstIndex(of: T) : T 값이 있는 첫번째 원소의 Index 값을 반환.Index<br>
+\[arr].firstIndex(of: arr.type) -> Int?<br>
+\[arr].remove(at: index) : index 위치의 원소를 삭제
+
 ~~~
 // 배열의 원소 삭제하기
 
@@ -99,6 +105,9 @@ func solution(_ n:Int) -> String {
 ***
 
 ### Lv.1
+
+\[arr].min() or .max() : 배열의 원소중 가장 작은 값 or 큰 값 반환<br>
+func min() or max() : 파라미터의 값들 중 가장 작은 값 or 큰 값 반환
 
 ~~~
 // 명예의 전당

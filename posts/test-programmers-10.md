@@ -37,6 +37,9 @@ type: 'test'
 
 ## 풀이 과정
 
+임시 보관 stack 배열을 만들고 다음에 꺼내야 할 상자, stack.last! 의 상자 둘 다 next_target 과 맞지 않으면 결과값 return<br>
+혹은 모든 상자를 다 꺼냈다면 return
+
 ~~~
 import Foundation
 
