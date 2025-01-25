@@ -34,6 +34,8 @@ type: 'test'
 
 ## 풀이 과정
 
+int[] numbers 를 첫번째 숫자의 값을 기준으로 정렬 후 배열 속 원소를 String 형식으로 변환해서 양방향으로 붙혀보고 더 큰 수가 될 수 있는 경우를 추가
+
 ~~~
 import java.util.Arrays;
 import java.util.stream.Collectors;
