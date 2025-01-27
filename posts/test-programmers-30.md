@@ -1,5 +1,5 @@
 ---
-id : 'test-programmers-29'
+id : 'test-programmers-30'
 title: '[프로그래머스 | 보석 쇼핑] Swift'
 date: '2025-01-27'
 excerpt: '2020 카카오 인턴십 (3번 문제) [보석 쇼핑] 문제풀이(정답 포함) 글입니다.'
