@@ -1,5 +1,5 @@
 ---
-id : 'test-programmers-87'
+id : 'test-programmers-28'
 title: '[프로그래머스 | [3차] 파일명 정렬] Swift'
 date: '2025-01-27'
 excerpt: '2018 KAKAO BLIND RECRUITMENT ([3차] 3번 문제) [파일명 정렬] 문제풀이(정답 포함) 글입니다.'
@@ -83,7 +83,8 @@ func solution(_ files:[String]) -> [String] {
         }
         files_info.append([start, end, count])
     }
-               
+    
+    // 튜플형식 정렬 -> .map { $0.1 } 사용으로 [String] 형태로 변환
     return files.enumerated().sorted { (a, b) in
         let (i1, f1) = a
         let (i2, f2) = b
