@@ -2,7 +2,7 @@
 id : 'test-programmers-17'
 title: '[프로그래머스 | 이중우선순위큐] Swift'
 date: '2025-01-22'
-excerpt: '힙(Heep) Lv.3 [이중우선순위큐] 문제풀이(정답 포함) 글입니다.'
+excerpt: '힙(Heap) Lv.3 [이중우선순위큐] 문제풀이(정답 포함) 글입니다.'
 type: 'test'
 ---
 
