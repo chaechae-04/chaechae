@@ -55,3 +55,4 @@ func solution(_ number:String, _ k:Int) -> String {
     return String(stack[0..<(arr.count - k)])
 }
 ~~~
+
