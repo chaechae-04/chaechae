@@ -16,7 +16,7 @@ export default function About() {
                     안녕하세요, 저는 [chaechae-04] 입니다.
                     </p>
                 <p className="text-sm xl:text-lg text-gray-400 font-bold mb-4">
-                    백엔드, 게임 개발자로, 항상 새로운것을 알아가는것에 열정을 가지고 있습니다.
+                    백엔드 개발자로, 항상 새로운것을 알아가는것에 열정을 가지고 있습니다.
                 </p>
                 
                 <div className="w-[90%] xl:w-[55%] bg-gray-600 h-px mt-2 mx-auto mt-5 mb-10" />
