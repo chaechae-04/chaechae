@@ -91,7 +91,7 @@ export default function Home() {
                 className="w-3/4 lg:w-1/2 rounded-lg mx-auto"
                 alt="임시 이미지" />
       </div>
-      <div className="w-full mx-auto justify-center">임시 이미지 입니다.</div>
+      <div className="w-full md:w-3/4 lg:w-3/4 xl:w-3/4 mx-auto justify-center">임시 이미지 입니다.</div>
       <TabBar onSelectTab={handleSelectTab} />
       <div className="max-w-7xl mx-auto flex px-4 py-8 space-x-4">
         <div className="w-full md:w-3/4 lg:w-3/4 xl:w-3/4 flex flex-col">
