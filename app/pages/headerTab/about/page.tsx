@@ -28,7 +28,7 @@ export default function About() {
                             PERSONAL HISTORY
                         </p>
                         <ul className="list-disc list-inside text-gray-300 text-xl">
-                            <li>[국립한국교통대학교] - 컴퓨터 공학 전공 1학년 재학</li>
+                            <li>[국립한국교통대학교] - 컴퓨터 공학 전공 2학년 재학</li>
                         </ul>
                     </div>
 
