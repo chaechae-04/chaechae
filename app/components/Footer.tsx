@@ -20,7 +20,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 <p className="text-xxs xl:text-xs m-2 mb-0">
-                    © 2024 chaechae-04 | 이 페이지는 내 개발 일지를 기록하는 테크로그입니다.
+                    © 2024 chaechae-04 | 이 페이지는 chaechae의 개발 일지를 기록하는 테크로그입니다.
                 </p>
             </div>
         </footer>
