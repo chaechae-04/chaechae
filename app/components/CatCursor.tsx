@@ -7,7 +7,7 @@ const CatCursor: React.FC = () => {
     const [mousePosition, setMousePosition] = useState<Position>({ x: 0, y: 0 }) 
     const [catPosition, setCatPosition] = useState<Position>({ x: 0, y: 0 }) 
 
-    const speed = 2.0 
+    const speed = 5.0 
 
     useEffect(() => {
         const handleMouseMove = (event: MouseEvent) => {
